@@ -10,17 +10,44 @@
   "availability": {
     "eyebrow": "Availability",
     "heading": "Summer 2027",
-    "text": "Casa Rossa is never listed on booking sites. We let it privately, to a small number of guests each summer, and every stay is arranged directly with us. The house is available for just seven weeks, Saturday to Saturday. Arrival from 4pm, departure by 10am.",
-    "price_from": ""
+    "text": "Casa Rossa is never listed on booking sites. We let it privately, to a small number of guests each summer, and every stay is arranged directly with us. The house is available for just seven weeks, Saturday to Saturday. Arrival from 4pm, departure by 10am."
   },
   "weeks": [
-    { "from": "24 July", "to": "31 July", "status": "Available" },
-    { "from": "31 July", "to": "7 August", "status": "Available" },
-    { "from": "7 August", "to": "14 August", "status": "Available" },
-    { "from": "14 August", "to": "21 August", "status": "Available" },
-    { "from": "21 August", "to": "28 August", "status": "Available" },
-    { "from": "28 August", "to": "4 September", "status": "Available" },
-    { "from": "4 September", "to": "11 September", "status": "Available" }
+    {
+      "from": "24 July",
+      "to": "31 July",
+      "status": "Booked"
+    },
+    {
+      "from": "31 July",
+      "to": "7 August",
+      "status": "Available"
+    },
+    {
+      "from": "7 August",
+      "to": "14 August",
+      "status": "Available"
+    },
+    {
+      "from": "14 August",
+      "to": "21 August",
+      "status": "Available"
+    },
+    {
+      "from": "21 August",
+      "to": "28 August",
+      "status": "Available"
+    },
+    {
+      "from": "28 August",
+      "to": "4 September",
+      "status": "Available"
+    },
+    {
+      "from": "4 September",
+      "to": "11 September",
+      "status": "Available"
+    }
   ],
   "terms": {
     "heading": "Booking terms",
@@ -38,7 +65,11 @@
   },
   "rules": {
     "heading": "House rules",
-    "list": ["No smoking anywhere in the house", "No pets", "Children: [[to confirm]]"]
+    "list": [
+      "No smoking anywhere in the house",
+      "No pets",
+      "Children: [[to confirm]]"
+    ]
   },
   "enquire": {
     "eyebrow": "Enquire",
