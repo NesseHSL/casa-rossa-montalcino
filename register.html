@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Guest registration · Casa Rossa, Montalcino</title>
+  <meta name="description" content="Guest registration for your stay at Casa Rossa, Montalcino.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <a class="wordmark" href="index.html">Casa Rossa</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="nav" id="nav">
+    <a href="floorplans.html">The House</a>
+    <a href="the-area.html">The Area</a>
+    <a href="services.html">The Services</a>
+    <a href="gallery.html">The Gallery</a>
+    <a class="nav-cta" href="booking.html">Booking</a>
+  </nav>
+</header>
+
+<section class="register">
+  <div class="wrap">
+    <p class="eyebrow">Guest registration</p>
+    <h2>Before you arrive</h2>
+    <p class="muted">Please fill this in once your stay is confirmed, so we can have everything ready for you. Services must be booked before you arrive, and the best ones book up quickly, so the sooner we hear from you, the better.</p>
+
+    <form id="register-form" novalidate>
+      <fieldset>
+        <legend>Lead guest</legend>
+        <div><label for="first">First name</label><input id="first" name="firstName" required autocomplete="given-name"></div>
+        <div><label for="surname">Surname</label><input id="surname" name="surname" required autocomplete="family-name"></div>
+        <div><label for="r-email">Email</label><input id="r-email" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="mobile">Mobile</label><input id="mobile" name="mobile" type="tel" required autocomplete="tel"></div>
+        <div class="full"><label for="address">Home address</label><textarea id="address" name="address" rows="3" autocomplete="street-address"></textarea></div>
+        <div><label for="country">Country</label><input id="country" name="country" autocomplete="country-name"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your stay</legend>
+        <div class="full"><label for="week">Week booked</label><select id="week" name="week"></select></div>
+        <div><label for="adults">Adults</label><input id="adults" name="adults" type="number" min="1" max="10"></div>
+        <div><label for="children">Children, with ages</label><input id="children" name="children" placeholder="e.g. 2, aged 8 and 12"></div>
+        <div><label for="arrival">Expected arrival time</label><input id="arrival" name="arrival" placeholder="e.g. 5pm"></div>
+        <div><label for="travel">Flights or travel details</label><input id="travel" name="travel" placeholder="e.g. BA2604 into Florence"></div>
+        <div class="full"><label for="occasion">Celebrating anything?</label><input id="occasion" name="occasion" placeholder="A birthday, anniversary or anything else we should know"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your needs</legend>
+        <div class="full"><label for="access">Accessibility requirements</label><textarea id="access" name="accessibility" rows="3"></textarea></div>
+        <div class="full"><label for="diet">Dietary requirements or allergies</label><textarea id="diet" name="dietary" rows="3"></textarea></div>
+        <div><label for="emergency-name">Emergency contact name</label><input id="emergency-name" name="emergencyName"></div>
+        <div><label for="emergency-phone">Emergency contact phone</label><input id="emergency-phone" name="emergencyPhone" type="tel"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Services you would like us to arrange</legend>
+        <div class="full checks">
+        <label class="check"><input type="checkbox" name="services" value="Wine tour or private tasting with Stephanie"> Wine tour or private tasting with Stephanie</label>
+        <label class="check"><input type="checkbox" name="services" value="Brunello tastings at local estates"> Brunello tastings at local estates</label>
+        <label class="check"><input type="checkbox" name="services" value="Private chef"> Private chef</label>
+        <label class="check"><input type="checkbox" name="services" value="Cooking class"> Cooking class</label>
+        <label class="check"><input type="checkbox" name="services" value="Restaurant reservations"> Restaurant reservations</label>
+        <label class="check"><input type="checkbox" name="services" value="Private transfers"> Private transfers</label>
+        <label class="check"><input type="checkbox" name="services" value="Guided walks"> Guided walks</label>
+        <label class="check"><input type="checkbox" name="services" value="Bike or e-bike hire"> Bike or e-bike hire</label>
+        <label class="check"><input type="checkbox" name="services" value="Guided bike tour"> Guided bike tour</label>
+        <label class="check"><input type="checkbox" name="services" value="Private yoga"> Private yoga</label>
+        <label class="check"><input type="checkbox" name="services" value="Personal training"> Personal training</label>
+        <label class="check"><input type="checkbox" name="services" value="Horse riding"> Horse riding</label>
+        <label class="check"><input type="checkbox" name="services" value="Days out (Siena, the coast and beyond)"> Days out (Siena, the coast and beyond)</label>
+        <label class="check"><input type="checkbox" name="services" value="Extra linen and towel changes"> Extra linen and towel changes</label>
+        </div>
+        <div class="full"><label for="other">Any other requests, questions or concerns</label><textarea id="other" name="other" rows="4"></textarea></div>
+      </fieldset>
+
+      <label class="check full consent"><input type="checkbox" name="consent" value="yes" required> I agree that Casa Rossa may use these details to prepare for and arrange our stay.</label>
+      <button class="btn" type="submit">Send registration</button>
+      <p class="form-note" id="register-note" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="index.html">Casa Rossa</a>
+      <p>Castelgiocondo, Montalcino, Tuscany</p>
+    </div>
+    <div>
+      <p>Email <span class="todo">to add</span><br>Instagram <span class="todo">to add</span></p>
+      <p>CIN <span class="todo">to add</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
