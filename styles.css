@@ -332,3 +332,5 @@ footer .wordmark { color: var(--paper); font-size: 2rem; }
 @media (max-width: 640px) {
   .register fieldset, .register .checks { grid-template-columns: 1fr; }
 }
+.week-booked { opacity: .45; }
+.plan-image img { width: 100%; height: auto; }

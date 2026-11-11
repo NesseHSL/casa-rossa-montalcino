@@ -1,0 +1,61 @@
+---
+permalink: gallery.html
+---
+{% extends "base.njk" %}
+{% set page_data = gallery %}
+{% set body_class = "page-gallery" %}
+{% set header_solid = true %}
+{% set footer_enquire = true %}
+{% set sections = gallery.sections | arrange %}
+{% macro grid(columns) %}
+    <div class="gallery-grid gallery-cols">
+{%- for col in columns %}
+      <div class="gallery-col">
+{%- for p in col %}
+        <button aria-label="Open photo: {{ p.caption | e }}" data-i="{{ p.i }}" data-full="{{ p.image | full }}"><img src="{{ p.image | small }}" alt="{{ p.caption | e }}" loading="lazy" {{ p.image | size | safe }}></button>
+{%- endfor %}
+      </div>
+{%- endfor %}
+    </div>
+{% endmacro %}
+{% block main %}
+<section class="gallery-page">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">{{ gallery.eyebrow | e }}</p>
+      <h1>{{ gallery.heading | e }}</h1>
+    </div>
+    <nav class="gallery-tabs" id="gallery-tabs" aria-label="Gallery sections">
+{%- for s in sections %}<a href="#{{ s.id }}">{{ s.title | e }}</a>{% endfor %}
+    </nav>
+    <div id="gallery-sections">
+{%- for s in sections %}
+      <section class="gallery-section" id="{{ s.id }}">
+        <h2>{{ s.title | e }}</h2>
+{%- if s.intro %}
+        <p class="muted gallery-intro">{{ s.intro | inline | safe }}</p>
+{%- endif %}
+{%- if s.columns %}{{ grid(s.columns) }}{% endif %}
+{%- for g in s.groups %}
+        <h3 class="gallery-group-title">{{ g.title | e }}</h3>
+{%- if g.note %}
+        <p class="muted gallery-group-note">{{ g.note | inline | safe }}</p>
+{%- endif %}
+        {{ grid(g.columns) }}
+{%- endfor %}
+{%- if not s.columns and not s.groups.length %}
+        <p class="plan-note">Photographs to come</p>
+{%- endif %}
+      </section>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous photo">‹</button>
+  <img alt="">
+  <button class="lb-next" aria-label="Next photo">›</button>
+</div>
+{% endblock %}

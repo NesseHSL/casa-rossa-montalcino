@@ -1,0 +1,7 @@
+<section class="hero hero-short" style="background-image: url('{{ page_data.hero.image | full }}')">
+  <div class="wrap">
+    <p class="eyebrow">{{ page_data.hero.eyebrow | e }}</p>
+    <h1>{{ page_data.hero.heading | e }}</h1>
+    <p>{{ page_data.hero.text | inline | safe }}</p>
+  </div>
+</section>

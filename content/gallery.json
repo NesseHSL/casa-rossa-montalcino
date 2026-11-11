@@ -1,0 +1,417 @@
+{
+  "eyebrow": "Gallery",
+  "heading": "Casa Rossa in pictures",
+  "meta_title": "Gallery · Casa Rossa, Montalcino",
+  "meta_description": "Photographs of Casa Rossa: the views, the garden and pool, the main house, the five en-suite bedrooms and the pool house.",
+  "sections": [
+    {
+      "id": "main-house",
+      "title": "The main house",
+      "intro": "",
+      "photos": [
+        {
+          "image": "/images/kitchen.jpg",
+          "caption": "The kitchen",
+          "column": "Left"
+        },
+        {
+          "image": "/images/dining.jpg",
+          "caption": "Dining room",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/lounge-fireplace-chair.jpg",
+          "caption": "Leather armchair beside the lounge fireplace",
+          "column": "Right"
+        },
+        {
+          "image": "/images/kitchen-dining.jpg",
+          "caption": "Kitchen and dining",
+          "column": "Left"
+        },
+        {
+          "image": "/images/living-area2.jpg",
+          "caption": "Winter sitting room",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/lounge-games.jpg",
+          "caption": "TV and games room",
+          "column": "Right"
+        },
+        {
+          "image": "/images/dining-kitchen-arch.jpg",
+          "caption": "Dining table, with the kitchen through the brick arch",
+          "column": "Left"
+        },
+        {
+          "image": "/images/winter-sitting-sofa.jpg",
+          "caption": "Winter sitting room, buttoned sofa beneath a gilt mirror",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/french-doors-sunset.jpg",
+          "caption": "Arched glass doors onto the garden at sunset",
+          "column": "Right"
+        },
+        {
+          "image": "/images/kitchen-spices.jpg",
+          "caption": "Kitchen shelves",
+          "column": "Left"
+        },
+        {
+          "image": "/images/living-area.jpg",
+          "caption": "The lounge",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/stairwell.jpg",
+          "caption": "Gallery staircase",
+          "column": "Right"
+        },
+        {
+          "image": "/images/dining-2.jpg",
+          "caption": "Formal dining room",
+          "column": "Left"
+        },
+        {
+          "image": "/images/lounge-fireplace.jpg",
+          "caption": "The lounge fireplace",
+          "column": "Centre"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "bedrooms",
+      "title": "Bedrooms",
+      "intro": "Five bedrooms, each with its own en-suite bathroom.",
+      "photos": [],
+      "groups": [
+        {
+          "title": "Bedroom one",
+          "note": "The principal bedroom, with a chandelier and sweeping vineyard views. En-suite with a freestanding bath, twin basins, walk-in shower and fireplace.",
+          "photos": [
+            {
+              "image": "/images/bedroom-1-01.jpg",
+              "caption": "Bedroom one",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-1-05.jpg",
+              "caption": "Bedroom one en-suite, freestanding bath and fireplace",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-1-03.jpg",
+              "caption": "Bedroom one, beamed ceiling and silk curtains",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-1-04.jpg",
+              "caption": "Bedroom one, the full-length mirror",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-1-10.jpg",
+              "caption": "View of the vineyards from bedroom one",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-1-02.jpg",
+              "caption": "Bedroom one, the carved bed beneath wall lights and a chandelier",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-1-09.jpg",
+              "caption": "Bedroom one en-suite, walk-in shower",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-1-07.jpg",
+              "caption": "Bedroom one en-suite, twin basins",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-1-08.jpg",
+              "caption": "Bedroom one en-suite, twin basins and window",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-1-12.jpg",
+              "caption": "Evening view from bedroom one",
+              "column": "Centre"
+            }
+          ]
+        },
+        {
+          "title": "Bedroom two",
+          "note": "Double-height, with a ladder up to a mezzanine platform. En-suite with a walk-in shower.",
+          "photos": [
+            {
+              "image": "/images/bedroom-2-01.jpg",
+              "caption": "Bedroom two",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-2-04.jpg",
+              "caption": "Bedroom two, the ladder to the mezzanine",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-2-07.jpg",
+              "caption": "Bedroom two en-suite, oval mirror",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-2-02.jpg",
+              "caption": "Bedroom two, windows on two sides",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-2-05.jpg",
+              "caption": "Bedroom two en-suite, walk-in shower",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-2-08.jpg",
+              "caption": "View over the olive trees from bedroom two",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-2-03.jpg",
+              "caption": "Bedroom two, looking up to the mezzanine",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-2-06.jpg",
+              "caption": "Bedroom two en-suite, stone basin",
+              "column": "Centre"
+            }
+          ]
+        },
+        {
+          "title": "Bedroom three",
+          "note": "With its own door out onto the loggia. En-suite with a walk-in shower.",
+          "photos": [
+            {
+              "image": "/images/bedroom-3-01.jpg",
+              "caption": "Bedroom three, with the door to the loggia",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-3-03.jpg",
+              "caption": "The loggia, seen from the bedroom three doorway",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-3-02.jpg",
+              "caption": "Bedroom three, the door open onto the loggia",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-3-05.jpg",
+              "caption": "Bedroom three en-suite",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-3-08.jpg",
+              "caption": "View through the arched window in bedroom three",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-3-06.jpg",
+              "caption": "Bedroom three en-suite, basin and walk-in shower",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-3-04.jpg",
+              "caption": "View from the loggia",
+              "column": "Right"
+            }
+          ]
+        },
+        {
+          "title": "Bedroom four",
+          "note": "Carved white bed and a feather pendant light. En-suite with a bath and a step-in shower.",
+          "photos": [
+            {
+              "image": "/images/bedroom-4-01.jpg",
+              "caption": "Bedroom four",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-4-04.jpg",
+              "caption": "Bedroom four, looking through to the en-suite",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-4-07.jpg",
+              "caption": "Bedroom four en-suite, the bath beneath the window",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-4-02.jpg",
+              "caption": "Bedroom four, the carved white bed",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-4-05.jpg",
+              "caption": "Bedroom four en-suite, basin and gilt mirror",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-4-08.jpg",
+              "caption": "View over the garden and hills from bedroom four",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-4-03.jpg",
+              "caption": "Bedroom four, feather pendant light",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-4-06.jpg",
+              "caption": "Bedroom four en-suite, the bath",
+              "column": "Centre"
+            }
+          ]
+        },
+        {
+          "title": "Bedroom five",
+          "note": "On the ground floor, with a painted bed and glass doors leading outside. En-suite with a bath and a step-in shower.",
+          "photos": [
+            {
+              "image": "/images/bedroom-5-01.jpg",
+              "caption": "Bedroom five",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-5-07.jpg",
+              "caption": "Bedroom five en-suite, stone basin beneath a gilt mirror and candle sconces",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-5-06.jpg",
+              "caption": "View through the ornamental grasses from bedroom five",
+              "column": "Right"
+            },
+            {
+              "image": "/images/bedroom-5-02.jpg",
+              "caption": "Bedroom five, the painted bed",
+              "column": "Left"
+            },
+            {
+              "image": "/images/bedroom-5-04.jpg",
+              "caption": "Bedroom five en-suite, the bath",
+              "column": "Centre"
+            },
+            {
+              "image": "/images/bedroom-5-03.jpg",
+              "caption": "Bedroom five, glass doors leading outside",
+              "column": "Left"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pool-house",
+      "title": "The pool house",
+      "intro": "",
+      "photos": [
+        {
+          "image": "/images/pool-house-room.jpg",
+          "caption": "The pool house, looking through to the dining table and fireplace",
+          "column": "Left"
+        },
+        {
+          "image": "/images/pool-house-dining.jpg",
+          "caption": "Pool house dining table, with the terrace beyond",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/pool-house-oven-fire.jpg",
+          "caption": "Fire burning in the bread oven",
+          "column": "Right"
+        },
+        {
+          "image": "/images/pool-house-sitting.jpg",
+          "caption": "Pool house sitting area with glass doors onto the garden",
+          "column": "Left"
+        },
+        {
+          "image": "/images/pool-house-kitchen.jpg",
+          "caption": "Pool house kitchen",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/pool-house-bathroom.jpg",
+          "caption": "Pool house bathroom",
+          "column": "Right"
+        },
+        {
+          "image": "/images/pool-house-bread-oven.jpg",
+          "caption": "The wood-fired bread oven in the pool house",
+          "column": "Centre"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "outdoor-dining",
+      "title": "Outdoor dining",
+      "intro": "",
+      "photos": [],
+      "groups": []
+    },
+    {
+      "id": "garden",
+      "title": "Garden and pool",
+      "intro": "",
+      "photos": [
+        {
+          "image": "/images/pool3.jpg",
+          "caption": "Saltwater pool framed by cypresses",
+          "column": "Left"
+        },
+        {
+          "image": "/images/vineyard-cypress.jpg",
+          "caption": "Cypress trees and vineyards below Casa Rossa",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/outside-entrance.jpg",
+          "caption": "Courtyard entrance",
+          "column": "Right"
+        },
+        {
+          "image": "/images/pool.jpg",
+          "caption": "The pool at dusk",
+          "column": "Left"
+        },
+        {
+          "image": "/images/olive-groves.jpg",
+          "caption": "Olive groves",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/pizza-oven.jpg",
+          "caption": "The old bread oven",
+          "column": "Right"
+        },
+        {
+          "image": "/images/pool2.jpg",
+          "caption": "Poolside chairs facing the hills",
+          "column": "Left"
+        },
+        {
+          "image": "/images/outside-wildflowers.jpg",
+          "caption": "Wildflower garden",
+          "column": "Centre"
+        }
+      ],
+      "groups": []
+    }
+  ]
+}

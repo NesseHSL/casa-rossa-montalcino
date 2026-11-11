@@ -1,0 +1,105 @@
+---
+permalink: index.html
+---
+{% extends "base.njk" %}
+{% set page_data = home %}
+{% set home_link = "#top" %}
+{% block main %}
+<section class="hero hero-slideshow">
+  <div class="hero-slides" aria-hidden="true">
+{%- for s in home.hero.slides %}
+    <div class="hero-slide{% if loop.first %} active{% endif %}" style="background-image: url('{{ s | full }}')"></div>
+{%- endfor %}
+  </div>
+  <div class="wrap">
+    <p class="eyebrow">{{ home.hero.eyebrow | e }}</p>
+    <h1>{{ home.hero.heading | e }}</h1>
+    <p>{{ home.hero.text | inline | safe }}</p>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">{{ home.welcome.eyebrow | e }}</p>
+      <h2>{{ home.welcome.heading | e }}</h2>
+    </div>
+    <div class="reveal">
+      <p class="lede">{{ home.welcome.lede | inline | safe }}</p>
+      <p>{{ home.welcome.text | inline | safe }}</p>
+      <p class="muted">{{ home.welcome.text_muted | inline | safe }}</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="facts reveal">
+{%- for f in home.welcome.facts %}
+      <div><strong>{{ f.number | e }}</strong><span>{{ f.label | e }}</span></div>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="house">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ home.house.eyebrow | e }}</p>
+      <h2>{{ home.house.heading | e }}</h2>
+      <p class="muted">{{ home.house.text | inline | safe }}</p>
+      <a class="text-link" href="gallery.html#main-house">{{ home.house.link_text | e }}</a>
+    </div>
+    <div class="spaces-grid">
+{%- for r in home.house.rooms %}
+      <article class="space reveal">
+        <img src="{{ r.image | small }}"{% if r.focus %} style="object-position: {{ r.focus | e }}"{% endif %} alt="{{ r.alt | e }}" loading="lazy" {{ r.image | size | safe }}>
+        <h3>{{ r.title | e }}</h3>
+        <p>{{ r.text | inline | safe }}</p>
+      </article>
+{%- endfor %}
+    </div>
+
+    <p class="gallery-more reveal"><a class="btn-outline" href="floorplans.html">{{ home.house.button_text | e }}</a></p>
+  </div>
+</section>
+
+<section class="outdoors" id="outdoors">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ home.outdoors.eyebrow | e }}</p>
+      <h2>{{ home.outdoors.heading | e }}</h2>
+      <p class="muted">{{ home.outdoors.text | inline | safe }}</p>
+      <a class="text-link" href="gallery.html#garden">{{ home.outdoors.link_text | e }}</a>
+    </div>
+    <div class="mosaic reveal">
+      <img class="big" src="{{ home.outdoors.photo_large.image | full }}" alt="{{ home.outdoors.photo_large.alt | e }}" loading="lazy">
+      <img src="{{ home.outdoors.photo_small_1.image | small }}" alt="{{ home.outdoors.photo_small_1.alt | e }}" loading="lazy">
+      <img src="{{ home.outdoors.photo_small_2.image | small }}" alt="{{ home.outdoors.photo_small_2.alt | e }}" loading="lazy">
+      <img class="wide" src="{{ home.outdoors.photo_wide.image | small }}" alt="{{ home.outdoors.photo_wide.alt | e }}" loading="lazy">
+    </div>
+    <div class="amenities">
+{%- for a in home.outdoors.features %}
+      <div class="reveal"><h3>{{ a.title | e }}</h3><p>{{ a.text | inline | safe }}</p></div>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <div class="story-photos reveal">
+      <img src="{{ home.story.photo.image | full }}" alt="{{ home.story.photo.alt | e }}" loading="lazy" {{ home.story.photo.image | size("full") | safe }}>
+      <img class="couple" src="{{ home.story.portrait.image | full }}" alt="{{ home.story.portrait.alt | e }}" loading="lazy" {{ home.story.portrait.image | size("full") | safe }}>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">{{ home.story.eyebrow | e }}</p>
+      <h2>{{ home.story.heading | e }}</h2>
+{%- for p in home.story.paragraphs %}
+      <p>{{ p | inline | safe }}</p>
+{%- endfor %}
+      <blockquote>{{ home.story.quote | inline | safe }}{% if home.story.quote_close %} <span class="quote-close">{{ home.story.quote_close | inline | safe }}</span>{% endif %}</blockquote>
+      <p class="signoff">{{ home.story.signoff | e }}</p>
+    </div>
+  </div>
+</section>
+
+{% include "enquire.njk" %}
+{% endblock %}

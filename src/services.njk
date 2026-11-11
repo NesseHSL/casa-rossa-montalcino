@@ -1,0 +1,55 @@
+---
+permalink: services.html
+---
+{% extends "base.njk" %}
+{% set page_data = services %}
+{% block main %}
+{% include "hero-short.njk" %}
+
+<section class="wine" id="wine">
+  <div class="wrap">
+    <div class="wine-body reveal">
+      <div class="wine-text">
+      <p class="eyebrow">{{ services.wine.eyebrow | e }}</p>
+      <h2>{{ services.wine.heading | e }}</h2>
+      <p class="lede">{{ services.wine.lede | inline | safe }}</p>
+{%- for p in services.wine.paragraphs %}
+      <p>{{ p | inline | safe }}</p>
+{%- endfor %}
+      </div>
+{%- if services.wine.portrait %}
+      <figure class="wine-portrait">
+        <img src="{{ services.wine.portrait | full }}" alt="{{ services.wine.portrait_name | e }}" loading="lazy" {{ services.wine.portrait | size("full") | safe }}>
+        <figcaption>{{ services.wine.portrait_name | e }}</figcaption>
+      </figure>
+{%- endif %}
+    </div>
+  </div>
+  <div class="wine-hero reveal">
+    <img src="{{ services.wine.wide_photo.image | full }}" alt="{{ services.wine.wide_photo.alt | e }}" loading="lazy">
+{%- if services.wine.wide_photo_note %}
+    <span class="todo wine-todo">{{ services.wine.wide_photo_note | e }}</span>
+{%- endif %}
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ services.services.eyebrow | e }}</p>
+      <h2>{{ services.services.heading | e }}</h2>
+      <p class="muted">{{ services.services.text | inline | safe }}</p>
+{%- if services.services.prebook %}
+      <p class="prebook">{{ services.services.prebook | inline | safe }}</p>
+{%- endif %}
+    </div>
+    <div class="service-list">
+{%- for s in services.services.items %}
+      <div class="reveal"><h3>{{ s.title | e }}</h3><p>{{ s.text | inline | safe }}</p></div>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "cta.njk" %}
+{% endblock %}

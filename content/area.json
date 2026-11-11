@@ -1,0 +1,39 @@
+{
+  "meta_title": "The Area · Casa Rossa, Montalcino",
+  "meta_description": "Things to do around Casa Rossa: Brunello wineries, hill towns, thermal springs, walks and the Tuscan coast, with distances and a map.",
+  "hero": {
+    "image": "/images/olive-groves.jpg",
+    "eyebrow": "Casa Rossa · Montalcino",
+    "heading": "The Area",
+    "text": "Brunello country, hill towns and the Tuscan coast, all within easy reach."
+  },
+  "location": {
+    "eyebrow": "Location",
+    "heading": "In the heart of Brunello country",
+    "text": "South of Siena in southern Tuscany, on the Castelgiocondo estate: 815 hectares of vineyards, forest and olive groves.",
+    "distances": [
+      { "place": "Castelgiocondo castle", "time": "15 min walk" },
+      { "place": "Montalcino", "time": "15 min drive" },
+      { "place": "Siena", "time": "1 hr 15" },
+      { "place": "Tyrrhenian coast", "time": "1 hr 15" },
+      { "place": "Florence", "time": "1 hr 30" },
+      { "place": "Florence airport", "time": "1 hr 45" },
+      { "place": "Pisa airport", "time": "2 hr 30" },
+      { "place": "Rome Fiumicino airport", "time": "2 hr 45" }
+    ],
+    "note": "For restaurants, shops and everyday essentials, Montalcino is just fifteen minutes away and Buonconvento just twenty. Over the years we have got to know the best tables in town and across the Val d'Orcia, and we are always happy to book them for you, from a long lunch among the vines to a special dinner out."
+  },
+  "explore": {
+    "eyebrow": "Explore",
+    "heading": "The sweet art of doing nothing, and everything else",
+    "groups": [
+      { "title": "At the house", "items": ["Swimming", "Bocce", "Table tennis", "Walks from the door", "Tasting at the castle"] },
+      { "title": "Wine", "items": ["Castelgiocondo", "Fuligni", "Casanova di Neri", "Conti Costanti", "Tassi"] },
+      { "title": "Active", "items": ["Walking and hiking", "Cycling to Montalcino", "Horse riding", "Cooking classes"] },
+      { "title": "Thermal springs", "items": ["Bagno Vignoni", "Saturnia", "Rapolano Terme", "Chianciano Terme"] },
+      { "title": "Hilltop towns", "items": ["Montalcino", "Pienza", "Montepulciano", "San Gimignano", "Siena"] },
+      { "title": "Further afield", "items": ["Castiglione della Pescaia and the Maremma", "Florence", "Val d'Orcia", "Rome by car or train", "Naples and Pompeii"] }
+    ]
+  },
+  "cta": { "eyebrow": "Plan your stay", "heading": "Tell us what you would love to do", "button": "Availability and booking" }
+}

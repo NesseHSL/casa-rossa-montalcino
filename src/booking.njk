@@ -1,0 +1,50 @@
+---
+permalink: booking.html
+---
+{% extends "base.njk" %}
+{% set page_data = booking %}
+{% block main %}
+{% include "hero-short.njk" %}
+
+<section class="availability" id="availability">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ booking.availability.eyebrow | e }}</p>
+      <h2>{{ booking.availability.heading | e }}</h2>
+      <p>{{ booking.availability.text | inline | safe }}</p>
+      <p class="price-from">Prices from: {% if booking.availability.price_from %}{{ booking.availability.price_from | inline | safe }}{% else %}<span class="todo">to add</span>{% endif %}</p>
+    </div>
+    <div class="weeks reveal" id="weeks">
+{%- for w in booking.weeks %}
+      <div class="week{% if w.status == 'Booked' %} week-booked{% endif %}"><small>Week {{ loop.index }}</small><strong>{{ w.from | e }} to {{ w.to | e }}</strong><span>{{ (w.status or "Available") | e }}</span></div>
+{%- endfor %}
+    </div>
+    <div class="terms reveal">
+      <h3>{{ booking.terms.heading | e }}{% if booking.terms.heading_note %} <span class="todo">{{ booking.terms.heading_note | e }}</span>{% endif %}</h3>
+{%- for p in booking.terms.paragraphs %}
+      <p>{{ p | inline | safe }}</p>
+{%- endfor %}
+{%- if booking.terms.list.length %}
+      <ul>
+{%- for item in booking.terms.list %}
+        <li>{{ item | inline | safe }}</li>
+{%- endfor %}
+      </ul>
+{%- endif %}
+{%- if booking.terms.after %}
+      <p>{{ booking.terms.after | inline | safe }}</p>
+{%- endif %}
+    </div>
+    <div class="terms reveal">
+      <h3>{{ booking.rules.heading | e }}</h3>
+      <ul>
+{%- for item in booking.rules.list %}
+        <li>{{ item | inline | safe }}</li>
+{%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include "enquire.njk" %}
+{% endblock %}

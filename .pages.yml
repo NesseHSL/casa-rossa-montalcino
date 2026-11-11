@@ -1,0 +1,336 @@
+# Pages CMS setup for Casa Rossa (https://app.pagescms.org)
+# Each entry below is one page of the website. Saving in Pages CMS updates the
+# matching file in content/, and Vercel republishes the site about a minute later.
+
+media:
+  input: images
+  output: /images
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+
+components:
+  photo:
+    type: object
+    fields:
+      - { name: image, label: Photo, type: image }
+      - { name: alt, label: Photo description, type: string, description: "A short description of the photo, for people using screen readers and for Google." }
+  galleryPhoto:
+    label: Photos
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: "{index}. {fields.caption} ({fields.column})"
+    fields:
+      - { name: image, label: Photo, type: image }
+      - { name: caption, label: Caption, type: string, description: "Shown when the photo is opened full size." }
+      - name: column
+        label: Column
+        type: select
+        description: "Which column the photo sits in on a computer screen. Photos in the same column appear top to bottom in the order of this list. Leave blank to let the website choose."
+        options:
+          values: [Left, Centre, Right]
+  hero:
+    label: Top banner
+    type: object
+    fields:
+      - { name: image, label: Background photo, type: image }
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - { name: text, label: Text, type: text }
+  cta:
+    label: Bottom banner
+    type: object
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - { name: button, label: Button text, type: string }
+  enquire:
+    label: Enquiry form
+    type: object
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - { name: text, label: Text above the form, type: text }
+  titled:
+    type: object
+    list:
+      collapsible: { collapsed: true, summary: "{fields.title}" }
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: text, label: Text, type: text }
+  titledList:
+    type: object
+    list:
+      collapsible: { collapsed: true, summary: "{fields.title}" }
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: items, label: Items, type: string, list: true }
+  seo:
+    label: Browser tab title
+    type: string
+    description: "Shown in the browser tab and in Google results."
+
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - { name: meta_title, component: seo }
+      - { name: meta_description, label: Google description, type: text }
+      - name: hero
+        label: Top banner
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: slides, label: Slideshow photos, type: image, list: true, description: "The photos that fade from one to the next, in this order." }
+      - name: welcome
+        label: Welcome
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: lede, label: Opening paragraph (larger), type: text }
+          - { name: text, label: Second paragraph, type: text }
+          - { name: text_muted, label: Third paragraph (lighter), type: text }
+          - name: facts
+            label: Key facts
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{fields.number} {fields.label}" } }
+            fields:
+              - { name: number, label: Number, type: string }
+              - { name: label, label: Label, type: string }
+      - name: house
+        label: The House
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: link_text, label: Gallery link text, type: string }
+          - name: rooms
+            label: Rooms
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{fields.title}" } }
+            fields:
+              - { name: image, label: Photo, type: image }
+              - { name: alt, label: Photo description, type: string }
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+              - { name: focus, label: Photo focus (advanced), type: string, description: "Usually leave blank. If you change the photo, clear this too." }
+          - { name: button_text, label: Floor plans button text, type: string }
+      - name: outdoors
+        label: The Outdoors
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: link_text, label: Gallery link text, type: string }
+          - { name: photo_large, label: Large photo (left), component: photo }
+          - { name: photo_small_1, label: Small photo (top middle), component: photo }
+          - { name: photo_small_2, label: Small photo (top right), component: photo }
+          - { name: photo_wide, label: Wide photo (bottom right), component: photo }
+          - { name: features, label: Outdoor features, component: titled }
+      - name: story
+        label: Our Story
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: photo, label: Main photo, component: photo }
+          - { name: portrait, label: Small portrait photo, component: photo }
+          - { name: paragraphs, label: Paragraphs, type: text, list: true }
+          - { name: quote, label: Quote, type: text }
+          - { name: quote_close, label: Quote second line, type: text }
+          - { name: signoff, label: Signed, type: string }
+      - { name: enquire, component: enquire }
+
+  - name: house
+    label: The House page
+    type: file
+    path: content/house.json
+    format: json
+    fields:
+      - { name: meta_title, component: seo }
+      - { name: meta_description, label: Google description, type: text }
+      - { name: hero, component: hero }
+      - name: amenities
+        label: Amenities
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: groups, label: Lists, component: titledList }
+      - name: floorplans
+        label: Floor plans
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - name: floors
+            label: Floors
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{fields.title}" } }
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: items, label: Rooms, type: string, list: true }
+              - { name: plan, label: Floor plan image, type: image, description: "Leave empty to show 'plan to come'." }
+      - { name: cta, component: cta }
+
+  - name: area
+    label: The Area page
+    type: file
+    path: content/area.json
+    format: json
+    fields:
+      - { name: meta_title, component: seo }
+      - { name: meta_description, label: Google description, type: text }
+      - { name: hero, component: hero }
+      - name: location
+        label: Location
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - name: distances
+            label: Distances
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{fields.place}: {fields.time}" } }
+            fields:
+              - { name: place, label: Place, type: string }
+              - { name: time, label: Time, type: string }
+          - { name: note, label: Note below distances, type: text }
+      - name: explore
+        label: Explore
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: groups, label: Lists, component: titledList }
+      - { name: cta, component: cta }
+
+  - name: services
+    label: The Services page
+    type: file
+    path: content/services.json
+    format: json
+    fields:
+      - { name: meta_title, component: seo }
+      - { name: meta_description, label: Google description, type: text }
+      - { name: hero, component: hero }
+      - name: wine
+        label: Wine
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: lede, label: Opening paragraph (larger), type: text }
+          - { name: paragraphs, label: Paragraphs, type: text, list: true }
+          - { name: portrait, label: Portrait photo, type: image }
+          - { name: portrait_name, label: Portrait name, type: string }
+          - { name: wide_photo, label: Wide photo, component: photo }
+          - { name: wide_photo_note, label: Placeholder note on wide photo, type: string, description: "Clear this once the right photo is in." }
+      - name: services
+        label: Services
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: prebook, label: Booking ahead note, type: text }
+          - { name: items, label: Services, component: titled }
+      - { name: cta, component: cta }
+
+  - name: booking
+    label: Booking page
+    type: file
+    path: content/booking.json
+    format: json
+    fields:
+      - { name: meta_title, component: seo }
+      - { name: meta_description, label: Google description, type: text }
+      - { name: hero, component: hero }
+      - name: availability
+        label: Availability
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+          - { name: price_from, label: Prices from, type: string, description: "e.g. €15,000 per week. Leave blank to show 'to add'." }
+      - name: weeks
+        label: Weeks
+        type: object
+        description: "Mark a week Booked and it is greyed out and removed from the enquiry form."
+        list: { collapsible: { collapsed: true, summary: "{fields.from} to {fields.to}: {fields.status}" } }
+        fields:
+          - { name: from, label: From, type: string }
+          - { name: to, label: To, type: string }
+          - name: status
+            label: Status
+            type: select
+            options:
+              values: [Available, Booked]
+      - name: terms
+        label: Booking terms
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string }
+          - { name: heading_note, label: Highlighted note by heading, type: string, description: "Clear this once the terms are final." }
+          - { name: paragraphs, label: Paragraphs, type: text, list: true }
+          - { name: list, label: Bullet points, type: text, list: true }
+          - { name: after, label: Paragraph after the bullet points, type: text }
+      - name: rules
+        label: House rules
+        type: object
+        fields:
+          - { name: heading, label: Heading, type: string }
+          - { name: list, label: Rules, type: string, list: true }
+      - { name: enquire, component: enquire }
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - { name: meta_title, component: seo }
+      - { name: meta_description, label: Google description, type: text }
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Heading, type: string }
+      - name: sections
+        label: Sections
+        type: object
+        list: { collapsible: { collapsed: true, summary: "{fields.title}" } }
+        fields:
+          - { name: id, type: string, hidden: true }
+          - { name: title, label: Title, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - { name: photos, component: galleryPhoto }
+          - name: groups
+            label: Sub-sections (for example, each bedroom)
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{fields.title}" } }
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: note, label: Note, type: text }
+              - { name: photos, component: galleryPhoto }
+
+  - name: settings
+    label: Contact details (footer)
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - { name: footer_location, label: Location line, type: string }
+      - { name: email, label: Email, type: string }
+      - { name: instagram, label: Instagram handle, type: string, description: "e.g. @casarossamontalcino" }
+      - { name: cin, label: CIN number, type: string }

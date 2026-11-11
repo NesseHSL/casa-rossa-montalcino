@@ -1,0 +1,23 @@
+<section class="enquire" id="enquire">
+  <div class="wrap">
+    <p class="eyebrow">{{ page_data.enquire.eyebrow | e }}</p>
+    <h2>{{ page_data.enquire.heading | e }}</h2>
+    <p class="muted">{{ page_data.enquire.text | inline | safe }}</p>
+    <form id="enquiry-form">
+      <div><label for="name">Name</label><input id="name" name="name" required autocomplete="name"></div>
+      <div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" max="12"></div>
+      <div class="full"><label for="week">Preferred week</label><select id="week" name="week">
+        <option value="">Choose a week</option>
+{%- for w in booking.weeks %}{% if w.status != "Booked" %}
+        <option value="Week {{ loop.index }}">Week {{ loop.index }}: {{ w.from | e }} to {{ w.to | e }}</option>
+{%- endif %}{% endfor %}
+        <option value="flexible">More than one week / flexible</option>
+      </select></div>
+      <div class="full"><label for="message">Message</label><textarea id="message" name="message" rows="4"></textarea></div>
+      <button class="btn" type="submit">Send enquiry</button>
+      <p class="form-note" id="form-note" aria-live="polite"></p>
+    </form>
+  </div>
+</section>

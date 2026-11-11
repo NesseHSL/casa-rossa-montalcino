@@ -1,0 +1,59 @@
+---
+permalink: floorplans.html
+---
+{% extends "base.njk" %}
+{% set page_data = house %}
+{% block main %}
+{% include "hero-short.njk" %}
+
+<section class="house-details">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ house.amenities.eyebrow | e }}</p>
+      <h2>{{ house.amenities.heading | e }}</h2>
+      <p class="muted">{{ house.amenities.text | inline | safe }}</p>
+    </div>
+    <div class="amenity-grid reveal">
+{%- for g in house.amenities.groups %}
+      <div>
+        <h3>{{ g.title | e }}</h3>
+        <ul class="room-list">
+{%- for item in g.items %}
+          <li>{{ item | inline | safe }}</li>
+{%- endfor %}
+        </ul>
+      </div>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="floorplans">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">{{ house.floorplans.eyebrow | e }}</p>
+      <h2>{{ house.floorplans.heading | e }}</h2>
+      <p class="muted">{{ house.floorplans.text | inline | safe }}</p>
+    </div>
+{%- for f in house.floorplans.floors %}
+    <div class="floor-row reveal">
+      <div>
+        <h2>{{ f.title | e }}</h2>
+        <ul class="room-list">
+{%- for item in f.items %}
+          <li>{{ item | inline | safe }}</li>
+{%- endfor %}
+        </ul>
+      </div>
+{%- if f.plan %}
+      <div class="plan-image"><img src="{{ f.plan | full }}" alt="{{ f.title | e }} plan" loading="lazy" {{ f.plan | size("full") | safe }}></div>
+{%- else %}
+      <div class="plan-box">{{ f.title | e }} plan to come</div>
+{%- endif %}
+    </div>
+{%- endfor %}
+  </div>
+</section>
+
+{% include "cta.njk" %}
+{% endblock %}
