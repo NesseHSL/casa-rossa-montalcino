@@ -490,6 +490,151 @@
       "intro": "",
       "photos": [
         {
+          "image": "/images/outside-01.jpg",
+          "caption": "The front of Casa Rossa",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-02.jpg",
+          "caption": "Casa Rossa from above, among the vineyards and olive trees",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-03.jpg",
+          "caption": "The house among the trees",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-04.jpg",
+          "caption": "The lawn and the house",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-05.jpg",
+          "caption": "The garden below the house",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-06.jpg",
+          "caption": "The house and its outbuildings",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-07.jpg",
+          "caption": "The gravel drive up to the house",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-08.jpg",
+          "caption": "Clipped hedges and grasses in front of the house",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-09.jpg",
+          "caption": "Clipped hedges along the house",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-10.jpg",
+          "caption": "Flowers in the garden beds",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-11.jpg",
+          "caption": "The gravel garden and pergola",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-12.jpg",
+          "caption": "A gravel path through the planting",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-13.jpg",
+          "caption": "A garden path leading down towards the valley",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-14.jpg",
+          "caption": "A quiet corner with a table and chairs",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-15.jpg",
+          "caption": "A shaded table on the terrace",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-16.jpg",
+          "caption": "An outdoor sitting area under the trees",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-17.jpg",
+          "caption": "Outdoor seating with striped cushions",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-18.jpg",
+          "caption": "A hammock in the shade",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-19.jpg",
+          "caption": "Garden chairs looking out over the hills",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-20.jpg",
+          "caption": "The bocce court",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-21.jpg",
+          "caption": "A game of bocce",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-22.jpg",
+          "caption": "Vineyards on the Castelgiocondo estate",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-23.jpg",
+          "caption": "A track through the vineyards",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-24.jpg",
+          "caption": "Among the vines",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-25.jpg",
+          "caption": "The view across the valley to the hills",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-26.jpg",
+          "caption": "The valley in late summer",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-27.jpg",
+          "caption": "The view through an old stone window",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-28.jpg",
+          "caption": "Grasses glowing at sunset",
+          "column": ""
+        },
+        {
+          "image": "/images/outside-29.jpg",
+          "caption": "Sunset over the hills",
+          "column": ""
+        },
+        {
           "image": "/images/vineyard-cypress.jpg",
           "caption": "Cypress trees and vineyards below Casa Rossa",
           "column": ""
