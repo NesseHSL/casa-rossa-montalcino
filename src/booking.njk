@@ -34,6 +34,18 @@ permalink: booking.html
 {%- if booking.terms.after %}
       <p>{{ booking.terms.after | inline | safe }}</p>
 {%- endif %}
+{%- for sec in booking.terms.sections %}
+{%- if sec.title %}
+      <h4>{{ sec.title | e }}</h4>
+{%- endif %}
+{%- if sec.items and sec.items.length %}
+      <ul>
+{%- for item in sec.items %}
+        <li>{{ item | inline | safe }}</li>
+{%- endfor %}
+      </ul>
+{%- endif %}
+{%- endfor %}
     </div>
     <div class="terms reveal">
       <h3>{{ booking.rules.heading | e }}</h3>

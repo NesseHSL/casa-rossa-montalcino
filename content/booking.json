@@ -51,24 +51,50 @@
   ],
   "terms": {
     "heading": "Booking terms",
-    "heading_note": "sample text, to edit",
-    "paragraphs": [
-      "**Deposit.** A deposit of 30% of the rental secures your week. The balance is due 60 days before arrival. A refundable security deposit of [[amount]] is also payable before arrival and returned within 14 days of departure.",
-      "**Cancellations.** If you need to cancel, we will refund payments made as follows:"
-    ],
-    "list": [
-      "More than 90 days before arrival: full refund, less a €250 administration fee",
-      "60 to 90 days before arrival: 50% refund",
-      "Fewer than 60 days before arrival: no refund, unless we are able to re-let the week"
-    ],
-    "after": "We strongly recommend taking out travel insurance that covers cancellation."
+    "sections": [
+      {
+        "title": "Payment",
+        "items": [
+          "A deposit of [[50%]] is due within 3 days of booking. Your booking is confirmed once the deposit is received.",
+          "The balance is due [[60]] days before arrival. For bookings made within [[60]] days of arrival, full payment is due on booking."
+        ]
+      },
+      {
+        "title": "Security deposit",
+        "items": [
+          "A refundable security deposit of [[€2,500]] is payable by bank transfer before arrival, and returned within 14 days of departure, less the cost of any damage."
+        ]
+      },
+      {
+        "title": "Tourist tax",
+        "items": [
+          "Montalcino's tourist tax of [[€X]] per person per night is payable separately."
+        ]
+      },
+      {
+        "title": "Cancellation",
+        "items": [
+          "The deposit is non-refundable unless we are able to re-let your week.",
+          "The balance is non-refundable once paid.",
+          "We strongly recommend travel insurance that covers cancellation."
+        ]
+      },
+      {
+        "title": "Children",
+        "items": [
+          "The weekly rate covers up to 10 guests, children included.",
+          "Children under 3 stay free and don't count towards the 10 if they sleep in a cot or child's bed. We have a BabyBjörn travel cot, a wooden cot and two small children's beds."
+        ]
+      }
+    ]
   },
   "rules": {
     "heading": "House rules",
     "list": [
-      "No smoking anywhere in the house",
-      "No pets",
-      "Children: [[to confirm]]"
+      "Check-in from 4pm, check-out by 10am.",
+      "A maximum of 10 guests, with no parties or events.",
+      "Passports or ID are required for all guests, as Italian law requires us to register every guest.",
+      "No smoking indoors, and no pets."
     ]
   },
   "enquire": {

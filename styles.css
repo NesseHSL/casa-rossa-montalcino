@@ -239,6 +239,7 @@ section { padding: clamp(80px, 12vw, 150px) 0; }
 .terms p, .terms li { font-size: .95rem; }
 .terms ul { margin: 0 0 1rem; padding-left: 1.2rem; }
 .terms li { margin-bottom: .35rem; }
+.terms h4 { font-family: var(--sans); font-weight: 500; font-size: .74rem; letter-spacing: .2em; text-transform: uppercase; color: var(--lavender); margin: 1.6rem 0 .6rem; }
 .avail-note { margin-top: 32px; font-size: .9rem; opacity: .9; }
 
 /* Enquire */
