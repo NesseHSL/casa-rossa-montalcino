@@ -359,56 +359,160 @@
       "groups": []
     },
     {
-      "id": "outdoor-dining",
-      "title": "Outdoor dining",
+      "id": "pool",
+      "title": "Pool",
       "intro": "",
-      "photos": [],
+      "photos": [
+        {
+          "image": "/images/pool-01.jpg",
+          "caption": "The saltwater pool and its line of cypresses",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-02.jpg",
+          "caption": "Loungers and the pool, looking out over the hills",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-03.jpg",
+          "caption": "Agapanthus around the pool, with the vineyards beyond",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-04.jpg",
+          "caption": "The pool from the shallow end",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-05.jpg",
+          "caption": "A summer afternoon on the pool floats",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-06.jpg",
+          "caption": "Striped floats at sunset",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-07.jpg",
+          "caption": "Sunset reflected in the pool",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-08.jpg",
+          "caption": "The sun setting behind the cypresses",
+          "column": ""
+        },
+        {
+          "image": "/images/pool-09.jpg",
+          "caption": "The pool lit up at night",
+          "column": ""
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "outdoor-dining",
+      "title": "Outside dining",
+      "intro": "",
+      "photos": [
+        {
+          "image": "/images/outdoor-dining-01.jpg",
+          "caption": "The pergola table at dusk, under strings of lights",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-02.jpg",
+          "caption": "The long table under the pergola, laid for dinner",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-03.jpg",
+          "caption": "A chandelier over the table, with the pool and hills beyond",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-04.jpg",
+          "caption": "Golden hour at the pergola table",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-05.jpg",
+          "caption": "A table set on the lawn at sunset",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-06.jpg",
+          "caption": "Dinner for a crowd under the pergola",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-07.jpg",
+          "caption": "The vine-covered pergola by day",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-08.jpg",
+          "caption": "A small table for two beside the house",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-09.jpg",
+          "caption": "Drinks around the fire pit",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-10.jpg",
+          "caption": "Lunch in the shade on the lawn",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-11.jpg",
+          "caption": "Lunch under the tree beside the house",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-12.jpg",
+          "caption": "A table beneath the tree",
+          "column": ""
+        },
+        {
+          "image": "/images/outdoor-dining-13.jpg",
+          "caption": "A picnic bench in the shade, looking out over the valley",
+          "column": ""
+        }
+      ],
       "groups": []
     },
     {
       "id": "garden",
-      "title": "Garden and pool",
+      "title": "Outside",
       "intro": "",
       "photos": [
         {
-          "image": "/images/pool3.jpg",
-          "caption": "Saltwater pool framed by cypresses",
-          "column": "Left"
-        },
-        {
           "image": "/images/vineyard-cypress.jpg",
           "caption": "Cypress trees and vineyards below Casa Rossa",
-          "column": "Centre"
+          "column": ""
         },
         {
           "image": "/images/outside-entrance.jpg",
           "caption": "Courtyard entrance",
-          "column": "Right"
-        },
-        {
-          "image": "/images/pool.jpg",
-          "caption": "The pool at dusk",
-          "column": "Left"
+          "column": ""
         },
         {
           "image": "/images/olive-groves.jpg",
           "caption": "Olive groves",
-          "column": "Centre"
+          "column": ""
         },
         {
           "image": "/images/pizza-oven.jpg",
           "caption": "The old bread oven",
-          "column": "Right"
-        },
-        {
-          "image": "/images/pool2.jpg",
-          "caption": "Poolside chairs facing the hills",
-          "column": "Left"
+          "column": ""
         },
         {
           "image": "/images/outside-wildflowers.jpg",
           "caption": "Wildflower garden",
-          "column": "Centre"
+          "column": ""
         }
       ],
       "groups": []
