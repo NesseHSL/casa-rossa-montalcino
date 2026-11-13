@@ -23,7 +23,7 @@
     "heading": "How the house fits together",
     "text": "Five en-suite bedrooms across two floors, generous living spaces, and a separate pool house across the courtyard.",
     "floors": [
-      { "title": "Ground floor", "items": ["Winter sitting room", "Formal dining room", "Lounge", "Kitchen and dining", "TV and games room", "Bedroom five with en-suite", "Guest cloakroom"], "plan": "/images/floorplan-ground.png" },
+      { "title": "Ground floor", "items": ["Winter sitting room", "Formal dining room", "La Saletta", "Lounge", "Kitchen and dining", "TV and games room", "Bedroom five with en-suite", "Guest cloakroom"], "plan": "/images/floorplan-ground.png" },
       { "title": "First floor", "items": ["Principal bedroom with en-suite", "Bedroom two with en-suite", "Bedroom three with en-suite and door to the loggia", "Bedroom four with en-suite", "Gallery staircase"], "plan": "/images/floorplan-first.png" },
       { "title": "Pool house", "items": ["Kitchen", "Sitting area", "Dining area", "Bathroom", "Wood-fired bread and pizza oven"], "plan": "" },
       { "title": "Outside", "items": ["Pergola with a table for twenty", "Saltwater pool, 15 by 4.5 metres", "Summer bed and hammocks", "Bocce court", "Table tennis", "Dining in the olive grove"], "plan": "" }
