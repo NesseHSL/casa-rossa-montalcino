@@ -2,7 +2,7 @@
   "meta_title": "Services · Casa Rossa, Montalcino",
   "meta_description": "Housekeeping, private transfers, chefs, wine tastings, cooking classes and more at Casa Rossa, Montalcino.",
   "hero": {
-    "image": "/images/kitchen-dining.jpg",
+    "image": "/images/services-enoteca.jpg",
     "eyebrow": "Casa Rossa · Montalcino",
     "heading": "Services",
     "text": "Everything arranged, so you can simply enjoy it."
@@ -38,6 +38,24 @@
       { "title": "Horse riding", "text": "Rides through the vineyards and woodland around Montalcino, with local stables and guides." },
       { "title": "Days out", "text": "Guided tours of Siena and beyond, or a day at a beach club on the coast with a seafood lunch." },
       { "title": "Peace of mind", "text": "We can help with the local pharmacy, a doctor or anything else you need during your stay." }
+    ]
+  },
+  "event": {
+    "eyebrow": "In August",
+    "heading": "Torneo di Apertura delle Cacce",
+    "lede": "Every August, Montalcino steps back into the Middle Ages for the Torneo di Apertura delle Cacce, the tournament that opens the hunting season.",
+    "paragraphs": [
+      "More than 150 people in fourteenth- and fifteenth-century costume parade through the streets to drums, trumpets and the great bell of the old town hall, led by the lords of the fortress, the standard bearer and the town crier.",
+      "Then the four quarters of the town, Borghetto, Pianello, Ruga and Travaglio, send their archers onto the field to shoot at targets shaped like wild boar, from 25 metres back to 45. The rivalry is real, and the winning quarter takes home a gold medal and a specially commissioned work of art.",
+      "The festival is usually held over the second weekend of August, with the parade and the tournament on the Sunday evening."
+    ],
+    "tickets": "Pat and Mark can organise tickets for the tournament for you. Just let us know when you book.",
+    "photos": [
+      { "image": "/images/torneo-parade.jpg", "alt": "A noblewoman in green velvet leading the historic parade" },
+      { "image": "/images/torneo-archers.jpg", "alt": "Archers in medieval costume on the tournament field" },
+      { "image": "/images/torneo-drummers.jpg", "alt": "Drummers and archers in red and green marching through Montalcino" },
+      { "image": "/images/torneo-street-dinner.jpg", "alt": "Long tables laid along a street in the old town" },
+      { "image": "/images/torneo-scorers.jpg", "alt": "Officials in costume recording the scores" }
     ]
   },
   "cta": { "eyebrow": "Plan your stay", "heading": "Tell us what you would love to do", "button": "Availability and booking" }

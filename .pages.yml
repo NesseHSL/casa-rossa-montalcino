@@ -247,6 +247,22 @@ content:
           - { name: text, label: Text, type: text }
           - { name: prebook, label: Booking ahead note, type: text }
           - { name: items, label: Services, component: titled }
+      - name: event
+        label: Torneo (August festival)
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: heading, label: Heading, type: string, description: "Clear the heading to hide this whole section." }
+          - { name: lede, label: Opening paragraph (larger), type: text }
+          - { name: paragraphs, label: Paragraphs, type: text, list: true }
+          - { name: tickets, label: Tickets note, type: text }
+          - name: photos
+            label: Photos
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{fields.alt}" } }
+            fields:
+              - { name: image, label: Photo, type: image }
+              - { name: alt, label: Photo description, type: string }
       - { name: cta, component: cta }
 
   - name: booking

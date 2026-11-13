@@ -51,5 +51,36 @@ permalink: services.html
   </div>
 </section>
 
+{%- if services.event and services.event.heading %}
+<section class="event" id="torneo">
+  <div class="wrap">
+    <div class="event-body reveal">
+      <div class="event-text">
+        <p class="eyebrow">{{ services.event.eyebrow | e }}</p>
+        <h2>{{ services.event.heading | e }}</h2>
+{%- if services.event.lede %}
+        <p class="lede">{{ services.event.lede | inline | safe }}</p>
+{%- endif %}
+{%- for p in services.event.paragraphs %}
+        <p>{{ p | inline | safe }}</p>
+{%- endfor %}
+{%- if services.event.tickets %}
+        <p class="prebook">{{ services.event.tickets | inline | safe }}</p>
+{%- endif %}
+      </div>
+    </div>
+{%- if services.event.photos and services.event.photos.length %}
+    <div class="event-photos reveal">
+{%- for ph in services.event.photos %}
+{%- if ph.image %}
+      <img src="{{ ph.image | full }}" alt="{{ ph.alt | e }}" loading="lazy" {{ ph.image | size("full") | safe }}>
+{%- endif %}
+{%- endfor %}
+    </div>
+{%- endif %}
+  </div>
+</section>
+{%- endif %}
+
 {% include "cta.njk" %}
 {% endblock %}
