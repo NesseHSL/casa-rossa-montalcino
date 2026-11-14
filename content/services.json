@@ -18,7 +18,7 @@
     "portrait": "/images/stephanie-barnet-2.jpg",
     "portrait_name": "Stephanie Barnet",
     "wide_photo": { "image": "/images/vineyard-cypress.jpg", "alt": "Vineyards and cypress trees around Montalcino" },
-    "wide_photo_note": "placeholder: wine tasting photo or video to add"
+    "wide_photo_note": ""
   },
   "services": {
     "eyebrow": "Services",
