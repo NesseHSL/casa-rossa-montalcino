@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 // Files in api/ that start with "_" are helpers, not web addresses.
 
 // Every form email goes to all of these inboxes.
-export const TO = ['pat@casarossa.estate', 'mark@casarossa.estate'];
+export const TO = ['patricia@casarossa.estate', 'mark@casarossa.estate'];
 
 // The Gmail account that does the sending ("the postman"). Guests never see it:
 // replies go straight to the guest. Its app password lives in Vercel as

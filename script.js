@@ -72,7 +72,7 @@ if (form) {
       form.reset();
       note.textContent = "Thank you. Pat and Mark will be in touch soon.";
     } catch {
-      note.innerHTML = 'Sorry, something went wrong. Please email us at <a href="mailto:pat@casarossa.estate">pat@casarossa.estate</a>.';
+      note.innerHTML = 'Sorry, something went wrong. Please email us at <a href="mailto:patricia@casarossa.estate">patricia@casarossa.estate</a>.';
     } finally {
       button.disabled = false;
     }
@@ -121,7 +121,7 @@ if (regForm) {
       regForm.reset();
       note.textContent = "Thank you. We have your details and will be in touch soon.";
     } catch {
-      note.innerHTML = 'Sorry, something went wrong. Please try again, or email us at <a href="mailto:pat@casarossa.estate">pat@casarossa.estate</a>.';
+      note.innerHTML = 'Sorry, something went wrong. Please try again, or email us at <a href="mailto:patricia@casarossa.estate">patricia@casarossa.estate</a>.';
     } finally {
       button.disabled = false;
     }
