@@ -348,3 +348,6 @@ footer .wordmark { color: var(--paper); font-size: 2rem; }
 }
 .week-booked { opacity: .45; }
 .plan-image img { width: 100%; height: auto; }
+
+/* Hidden anti-spam field on the enquiry form */
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

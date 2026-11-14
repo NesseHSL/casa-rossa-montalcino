@@ -47,12 +47,35 @@ if (lb) {
   });
 }
 
-// Enquiry form is not connected yet in this draft
+// "Come and stay" enquiry form
 const form = document.getElementById("enquiry-form");
 if (form) {
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    document.getElementById("form-note").textContent = "Draft only: the enquiry form will be connected before the site goes live.";
+    const note = document.getElementById("form-note");
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    const data = Object.fromEntries(new FormData(form));
+    data.page = document.title;
+    const button = form.querySelector("button[type=submit]");
+    button.disabled = true;
+    note.textContent = "Sending…";
+    try {
+      const res = await fetch("/api/enquire", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error();
+      form.reset();
+      note.textContent = "Thank you. Pat and Mark will be in touch soon.";
+    } catch {
+      note.innerHTML = 'Sorry, something went wrong. Please email us at <a href="mailto:pat@casarossa.estate">pat@casarossa.estate</a>.';
+    } finally {
+      button.disabled = false;
+    }
   });
 }
 
@@ -98,7 +121,7 @@ if (regForm) {
       regForm.reset();
       note.textContent = "Thank you. We have your details and will be in touch soon.";
     } catch {
-      note.textContent = "Sorry, something went wrong. Please try again, or email us directly.";
+      note.innerHTML = 'Sorry, something went wrong. Please try again, or email us at <a href="mailto:pat@casarossa.estate">pat@casarossa.estate</a>.';
     } finally {
       button.disabled = false;
     }

@@ -1,17 +1,4 @@
-import nodemailer from 'nodemailer';
-
-// Where registrations are sent. Swap to Pat's address when ready.
-const TO = 'innamotravel@gmail.com';
-
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
-  auth: {
-    user: 'innamotravel@gmail.com',
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-});
+import { transporter, TO, FROM, plain, table } from './_mailer.js';
 
 const FIELDS = [
   ['firstName', 'First name'],
@@ -39,9 +26,6 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const esc = (v) => String(v ?? '').trim().slice(0, 4000)
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  const plain = (v) => String(v ?? '').replace(/[\r\n]+/g, ' ').trim().slice(0, 200);
   const body = req.body || {};
   if (Array.isArray(body.services)) body.services = body.services.join('\n');
 
@@ -49,19 +33,11 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Name, email and mobile are required' });
   }
 
-  const rows = FIELDS.map(([key, label]) => {
-    const value = esc(body[key]).replace(/\n/g, '<br>') || '<span style="color:#999">Not given</span>';
-    return `<tr><td style="padding:8px 16px 8px 0;vertical-align:top;color:#6E7350;white-space:nowrap">${label}</td><td style="padding:8px 0;vertical-align:top">${value}</td></tr>`;
-  }).join('');
-
-  const html = `<div style="font-family:Georgia,serif;color:#26232A;max-width:640px">
-  <h2 style="color:#5B2A45;font-weight:normal">Casa Rossa guest registration</h2>
-  <table style="border-collapse:collapse;font-size:15px">${rows}</table>
-</div>`;
+  const html = table('Casa Rossa guest registration', FIELDS, body);
 
   try {
     await transporter.sendMail({
-      from: '"Casa Rossa" <innamotravel@gmail.com>',
+      from: FROM,
       to: TO,
       replyTo: plain(body.email),
       subject: `Guest registration: ${plain(body.firstName)} ${plain(body.surname)} | ${plain(body.week) || 'week not given'}`,
