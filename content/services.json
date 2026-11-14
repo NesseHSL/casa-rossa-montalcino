@@ -12,13 +12,15 @@
     "heading": "You come to Montalcino for the wine",
     "lede": "Montalcino is the home of Brunello, one of the world's great wines, and Casa Rossa sits among some of its finest vineyards. So we have a wine expert on hand.",
     "paragraphs": [
-      "Stephanie Barnet leads the high-end client relationships for an exclusive wine members' club in London. She can arrange wine tours of the estates, private tastings and other wine experiences around your stay, whether that is your first taste of Brunello or a search for a particular vintage.",
+      "Stephanie Barnett leads the high-end client relationships for an exclusive wine members' club in London. She can arrange wine tours of the estates, private tastings and other wine experiences around your stay, whether that is your first taste of Brunello or a search for a particular vintage.",
       "Tell us what you enjoy and Stephanie will plan the rest."
     ],
     "portrait": "/images/stephanie-barnet-2.jpg",
-    "portrait_name": "Stephanie Barnet",
-    "wide_photo": { "image": "/images/vineyard-cypress.jpg", "alt": "Vineyards and cypress trees around Montalcino" },
-    "wide_photo_note": ""
+    "portrait_name": "Stephanie Barnett",
+    "wide_photo": {
+      "image": "/images/vineyard-cypress.jpg",
+      "alt": "Vineyards and cypress trees around Montalcino"
+    }
   },
   "services": {
     "eyebrow": "Services",
@@ -26,18 +28,54 @@
     "text": "We have lived here for over twenty years. Tell us what you would like and we will arrange it.",
     "prebook": "Everything below can be arranged by us, but must be booked before you arrive. The best guides, chefs and instructors are in demand all summer and book up quickly, so the earlier you let us know, the better your chances.",
     "items": [
-      { "title": "Housekeeping", "text": "The house is overseen by Pat and Valeria. It will be immaculate when you arrive, and refreshed midweek with clean sheets and towels. Extra changes are available on request." },
-      { "title": "Private transfers", "text": "Luxury cars and vans with local, English-speaking drivers, to and from Casa Rossa or anywhere in Italy. We do recommend a four-wheel drive for the estate's white roads." },
-      { "title": "Restaurant reservations", "text": "We have eaten at all of them. Ask for our list and we will book your table." },
-      { "title": "Private chef", "text": "For an intimate dinner, or simply a night off from cooking." },
-      { "title": "Brunello tastings", "text": "Visits to some of Montalcino's finest estates, with a long gourmet lunch." },
-      { "title": "Cooking classes", "text": "Learn fresh pasta or a local speciality, then eat what you have made, with a glass of Brunello." },
-      { "title": "Guided walks", "text": "Hundreds of kilometres of trails cross the Val d'Orcia, and many end at a wonderful restaurant where we can book lunch." },
-      { "title": "Cycling", "text": "Bikes and e-bikes to hire for your stay, or a guided ride through the vineyards and along the white roads, with a stop for lunch on the way." },
-      { "title": "Yoga and personal training", "text": "Private yoga classes or one-to-one training sessions, at the house, by the pool or out among the olive trees." },
-      { "title": "Horse riding", "text": "Rides through the vineyards and woodland around Montalcino, with local stables and guides." },
-      { "title": "Days out", "text": "Guided tours of Siena and beyond, or a day at a beach club on the coast with a seafood lunch." },
-      { "title": "Peace of mind", "text": "We can help with the local pharmacy, a doctor or anything else you need during your stay." }
+      {
+        "title": "Housekeeping",
+        "text": "The house is overseen by Pat and Valeria. It will be immaculate when you arrive, and refreshed midweek with clean sheets and towels. Extra changes are available on request."
+      },
+      {
+        "title": "Private transfers",
+        "text": "Luxury cars and vans with local, English-speaking drivers, to and from Casa Rossa or anywhere in Italy. We do recommend a four-wheel drive for the estate's white roads."
+      },
+      {
+        "title": "Restaurant reservations",
+        "text": "We have eaten at all of them. Ask for our list and we will book your table."
+      },
+      {
+        "title": "Private chef",
+        "text": "For an intimate dinner, or simply a night off from cooking."
+      },
+      {
+        "title": "Brunello tastings",
+        "text": "Visits to some of Montalcino's finest estates, with a long gourmet lunch."
+      },
+      {
+        "title": "Cooking classes",
+        "text": "Learn fresh pasta or a local speciality, then eat what you have made, with a glass of Brunello."
+      },
+      {
+        "title": "Guided walks",
+        "text": "Hundreds of kilometres of trails cross the Val d'Orcia, and many end at a wonderful restaurant where we can book lunch."
+      },
+      {
+        "title": "Cycling",
+        "text": "Bikes and e-bikes to hire for your stay, or a guided ride through the vineyards and along the white roads, with a stop for lunch on the way."
+      },
+      {
+        "title": "Yoga and personal training",
+        "text": "Private yoga classes or one-to-one training sessions, at the house, by the pool or out among the olive trees."
+      },
+      {
+        "title": "Horse riding",
+        "text": "Rides through the vineyards and woodland around Montalcino, with local stables and guides."
+      },
+      {
+        "title": "Days out",
+        "text": "Guided tours of Siena and beyond, or a day at a beach club on the coast with a seafood lunch."
+      },
+      {
+        "title": "Peace of mind",
+        "text": "We can help with the local pharmacy, a doctor or anything else you need during your stay."
+      }
     ]
   },
   "event": {
@@ -51,12 +89,31 @@
     ],
     "tickets": "Pat and Mark can organise tickets for the quartiere dinner and tournament for you. Just let us know when you book.",
     "photos": [
-      { "image": "/images/torneo-parade.jpg", "alt": "A noblewoman in green velvet leading the historic parade" },
-      { "image": "/images/torneo-archers.jpg", "alt": "Archers in medieval costume on the tournament field" },
-      { "image": "/images/torneo-drummers.jpg", "alt": "Drummers and archers in red and green marching through Montalcino" },
-      { "image": "/images/torneo-street-dinner.jpg", "alt": "Long tables laid along a street in the old town" },
-      { "image": "/images/torneo-scorers.jpg", "alt": "Officials in costume recording the scores" }
+      {
+        "image": "/images/torneo-parade.jpg",
+        "alt": "A noblewoman in green velvet leading the historic parade"
+      },
+      {
+        "image": "/images/torneo-archers.jpg",
+        "alt": "Archers in medieval costume on the tournament field"
+      },
+      {
+        "image": "/images/torneo-drummers.jpg",
+        "alt": "Drummers and archers in red and green marching through Montalcino"
+      },
+      {
+        "image": "/images/torneo-street-dinner.jpg",
+        "alt": "Long tables laid along a street in the old town"
+      },
+      {
+        "image": "/images/torneo-scorers.jpg",
+        "alt": "Officials in costume recording the scores"
+      }
     ]
   },
-  "cta": { "eyebrow": "Plan your stay", "heading": "Tell us what you would love to do", "button": "Availability and booking" }
+  "cta": {
+    "eyebrow": "Plan your stay",
+    "heading": "Tell us what you would love to do",
+    "button": "Availability and booking"
+  }
 }
