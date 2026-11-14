@@ -1,0 +1,79 @@
+{
+  "meta_title": "Availability and booking · Casa Rossa, Montalcino",
+  "meta_description": "Availability for summer 2027 at Casa Rossa, Montalcino, and how to enquire about a stay.",
+  "hero": {
+    "image": "/images/pool3.jpg",
+    "eyebrow": "Casa Rossa · Summer 2027",
+    "heading": "Booking",
+    "text": "Seven weeks each summer, Saturday to Saturday."
+  },
+  "availability": {
+    "eyebrow": "Availability",
+    "heading": "Summer 2027",
+    "text": "Casa Rossa is never listed on booking sites. We let it privately, to a small number of guests each summer, and every stay is arranged directly with us. The house is available for just seven weeks, Saturday to Saturday. Arrival from 4pm, departure by 10am."
+  },
+  "weeks": [
+    {
+      "from": "24 July",
+      "to": "31 July",
+      "status": "Available"
+    },
+    {
+      "from": "31 July",
+      "to": "7 August",
+      "status": "Available"
+    },
+    {
+      "from": "7 August",
+      "to": "14 August",
+      "status": "Available"
+    },
+    {
+      "from": "14 August",
+      "to": "21 August",
+      "status": "Available"
+    },
+    {
+      "from": "21 August",
+      "to": "28 August",
+      "status": "Available"
+    },
+    {
+      "from": "28 August",
+      "to": "4 September",
+      "status": "Available"
+    },
+    {
+      "from": "4 September",
+      "to": "11 September",
+      "status": "Available"
+    }
+  ],
+  "terms": {
+    "heading": "Booking terms",
+    "heading_note": "sample text, to edit",
+    "paragraphs": [
+      "**Deposit.** A deposit of 30% of the rental secures your week. The balance is due 60 days before arrival. A refundable security deposit of [[amount]] is also payable before arrival and returned within 14 days of departure.",
+      "**Cancellations.** If you need to cancel, we will refund payments made as follows:"
+    ],
+    "list": [
+      "More than 90 days before arrival: full refund, less a €250 administration fee",
+      "60 to 90 days before arrival: 50% refund",
+      "Fewer than 60 days before arrival: no refund, unless we are able to re-let the week"
+    ],
+    "after": "We strongly recommend taking out travel insurance that covers cancellation."
+  },
+  "rules": {
+    "heading": "House rules",
+    "list": [
+      "No smoking anywhere in the house",
+      "No pets",
+      "Children: [[to confirm]]"
+    ]
+  },
+  "enquire": {
+    "eyebrow": "Enquire",
+    "heading": "Come and stay",
+    "text": "Tell us when you would like to come and who will be joining you, and we will be in touch personally. We aim to respond to all enquiries within 24 hours."
+  }
+}

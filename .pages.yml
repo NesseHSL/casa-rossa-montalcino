@@ -218,7 +218,7 @@ content:
       - { name: cta, component: cta }
 
   - name: services
-    label: The Services page
+    label: The Experience page
     type: file
     path: content/services.json
     format: json

@@ -1,10 +1,10 @@
 {
-  "meta_title": "Services · Casa Rossa, Montalcino",
+  "meta_title": "Services and Experiences · Casa Rossa, Montalcino",
   "meta_description": "Housekeeping, private transfers, chefs, wine tastings, cooking classes and more at Casa Rossa, Montalcino.",
   "hero": {
     "image": "/images/services-enoteca.jpg",
     "eyebrow": "Casa Rossa · Montalcino",
-    "heading": "Services",
+    "heading": "Services and Experiences",
     "text": "Everything arranged, so you can simply enjoy it."
   },
   "wine": {
@@ -23,7 +23,7 @@
   "services": {
     "eyebrow": "Services",
     "heading": "We know this corner of Tuscany by heart",
-    "text": "We have lived here for over twenty-five years. Tell us what you would like and we will arrange it.",
+    "text": "We have lived here for over twenty years. Tell us what you would like and we will arrange it.",
     "prebook": "Everything below can be arranged by us, but must be booked before you arrive. The best guides, chefs and instructors are in demand all summer and book up quickly, so the earlier you let us know, the better your chances.",
     "items": [
       { "title": "Housekeeping", "text": "The house is overseen by Pat and Valeria. It will be immaculate when you arrive, and refreshed midweek with clean sheets and towels. Extra changes are available on request." },
@@ -49,7 +49,7 @@
       "Then the four quarters of the town, Borghetto, Pianello, Ruga and Travaglio, send their archers onto the field to shoot at targets shaped like wild boar, from 25 metres back to 45. The rivalry is real, and the winning quarter takes home a gold medal and a specially commissioned work of art.",
       "The festival is usually held over the second weekend of August, with the parade and the tournament on the Sunday evening."
     ],
-    "tickets": "Pat and Mark can organise tickets for the tournament for you. Just let us know when you book.",
+    "tickets": "Pat and Mark can organise tickets for the quartiere dinner and tournament for you. Just let us know when you book.",
     "photos": [
       { "image": "/images/torneo-parade.jpg", "alt": "A noblewoman in green velvet leading the historic parade" },
       { "image": "/images/torneo-archers.jpg", "alt": "Archers in medieval costume on the tournament field" },

@@ -90,7 +90,7 @@
       "groups": [
         {
           "title": "Bedroom one",
-          "note": "The principal bedroom, with a chandelier and sweeping vineyard views. En-suite with a freestanding bath, twin basins, walk-in shower and fireplace.",
+          "note": "The principal bedroom, with a super king-size bed, a chandelier and sweeping vineyard views. En-suite with a freestanding bath, twin basins, walk-in shower and fireplace.",
           "photos": [
             {
               "image": "/images/bedroom-1-01.jpg",
@@ -146,7 +146,7 @@
         },
         {
           "title": "Bedroom two",
-          "note": "Double-height, with a ladder up to a mezzanine platform. En-suite with a walk-in shower.",
+          "note": "Double-height, with a king-size bed and a ladder up to a mezzanine platform. En-suite with a walk-in shower.",
           "photos": [
             {
               "image": "/images/bedroom-2-01.jpg",
@@ -192,7 +192,7 @@
         },
         {
           "title": "Bedroom three",
-          "note": "With its own door out onto the loggia. En-suite with a walk-in shower.",
+          "note": "King-size bed, with its own door out onto the loggia. En-suite with a walk-in shower.",
           "photos": [
             {
               "image": "/images/bedroom-3-01.jpg",
@@ -233,7 +233,7 @@
         },
         {
           "title": "Bedroom four",
-          "note": "Carved white bed and a feather pendant light. En-suite with a bath and a step-in shower.",
+          "note": "Carved white king-size bed and a feather pendant light. En-suite with a bath and a step-in shower.",
           "photos": [
             {
               "image": "/images/bedroom-4-01.jpg",
@@ -279,7 +279,7 @@
         },
         {
           "title": "Bedroom five",
-          "note": "On the ground floor, with a painted bed and glass doors leading outside. En-suite with a bath and a step-in shower.",
+          "note": "On the ground floor, with a painted king-size bed and glass doors leading outside. En-suite with a bath and a step-in shower.",
           "photos": [
             {
               "image": "/images/bedroom-5-01.jpg",
@@ -361,7 +361,7 @@
     {
       "id": "pool",
       "title": "Pool",
-      "intro": "",
+      "intro": "A saltwater pool, with two large parasols and six sun loungers.",
       "photos": [
         {
           "image": "/images/pool-01.jpg",
