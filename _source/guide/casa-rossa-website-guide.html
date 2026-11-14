@@ -1,0 +1,229 @@
+<title>Casa Rossa Website Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: a single readable column, like a printed house book; a sticky contents strip on wide screens */
+:root{
+  --paper:#F8F7F4; --stone:#EEECE8; --ink:#26232A; --muted:#66626B; --rule:#CFCDC9;
+  --plum:#5B2A45; --lavender:#B9A8CF; --mist:#ECE6F3; --olive:#6E7350; --tip:#EEF0E6;
+  --serif:"Cormorant Garamond", Georgia, serif; --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1E1B21; --stone:#26222A; --ink:#ECE8EE; --muted:#B0AAB6; --rule:#3C3742;
+  --plum:#D7B4CB; --lavender:#B9A8CF; --mist:#2E2836; --olive:#C2C79F; --tip:#262A20; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#1E1B21; --stone:#26222A; --ink:#ECE8EE; --muted:#B0AAB6; --rule:#3C3742;
+  --plum:#D7B4CB; --lavender:#B9A8CF; --mist:#2E2836; --olive:#C2C79F; --tip:#262A20; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.65;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto;padding-block:56px 96px}
+header .eyebrow,.eyebrow{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--plum);font-weight:400;margin:0}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,7vw,3.8rem);line-height:1.05;margin:.3em 0 .25em;text-wrap:balance}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,2.3rem);line-height:1.15;margin:0 0 .4em;text-wrap:balance}
+h3{font-family:var(--sans);font-weight:500;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);margin:1.8em 0 .5em}
+p{margin:0 0 1em} .lede{font-family:var(--serif);font-size:1.4rem;line-height:1.45;color:var(--muted);font-style:italic}
+a{color:var(--plum)} strong{font-weight:500}
+section{padding-block:44px;border-top:1px solid var(--rule)}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px 18px;margin:28px 0 8px;padding:16px 0;border-top:1px solid var(--rule)}
+nav.toc a{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+nav.toc a:hover,nav.toc a:focus-visible{color:var(--plum)}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:0 0 1.2em;display:grid;gap:12px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:2.1em 1fr;gap:10px;align-items:baseline}
+ol.steps li::before{content:counter(s);font-family:var(--serif);font-size:1.35rem;color:var(--plum);line-height:1}
+ul{padding-left:1.1em;margin:0 0 1em} li{margin-bottom:.35em}
+.ui{font-weight:500;color:var(--plum);white-space:nowrap}
+code,.mark{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:var(--stone);padding:.1em .4em;border-radius:3px}
+.tip{background:var(--tip);border-left:3px solid var(--olive);padding:14px 18px;margin:1.2em 0;border-radius:0 4px 4px 0}
+.tip p:last-child{margin:0} .tip strong{color:var(--olive)}
+.ask{background:var(--mist);border-left:3px solid var(--lavender);padding:14px 18px;margin:1.2em 0;border-radius:0 4px 4px 0}
+.table-scroll{overflow-x:auto;margin:1em 0 1.4em}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+th{font-weight:500;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font-family:var(--serif);font-size:1.15rem;white-space:nowrap}
+.addr{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95rem;background:var(--stone);padding:.2em .5em;border-radius:3px;user-select:all}
+footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+@media (max-width:520px){body{font-size:16px} td:first-child{white-space:normal}}
+</style>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">Casa Rossa · Montalcino</p>
+  <h1>Your website, and how to look after it</h1>
+  <p class="lede">Everything you need to change words, photos and available weeks on the Casa Rossa website yourself, without touching any code.</p>
+  <nav class="toc" aria-label="Contents">
+    <a href="#start">Getting in</a><a href="#basics">The basics</a><a href="#words">Words</a><a href="#photos">Photos</a>
+    <a href="#gallery">Gallery</a><a href="#weeks">Weeks and prices</a><a href="#map">Where things live</a><a href="#accounts">Who owns what</a><a href="#help">When to ask Hillary</a>
+  </nav>
+</header>
+
+<section id="start">
+  <p class="eyebrow">Step one</p>
+  <h2>Getting in</h2>
+  <p>You edit the website in a free tool called <strong>Pages CMS</strong>. You sign in to it with your <strong>GitHub</strong> username and password, so keep those somewhere safe.</p>
+  <ol class="steps">
+    <li><span>Go to <span class="addr">app.pagescms.org</span> and click <span class="ui">Sign in with GitHub</span>. Sign in with your GitHub username and password.</span></li>
+    <li><span>The first time only: if it says there are no repositories, click the button to install or add one, choose <span class="ui">Only select repositories</span>, tick <span class="ui">casa-rossa-montalcino</span> and click <span class="ui">Install</span>.</span></li>
+    <li><span>Click <span class="ui">casa-rossa-montalcino</span> to open the website. Next time you visit, you'll go straight to it.</span></li>
+    <li><span>Choose <strong>casa-rossa-montalcino</strong> to open the website.</span></li>
+  </ol>
+  <p>While it's being finished, the website is at <span class="addr">casa-rossa-montalcino.vercel.app</span>. When it launches, it will move to <span class="addr">casarossa.estate</span>. Keep it open in another tab so you can check your changes.</p>
+</section>
+
+<section id="basics">
+  <p class="eyebrow">How it works</p>
+  <h2>The basics</h2>
+  <p>On the left of Pages CMS is a list of the website's pages: <em>Home page</em>, <em>The House page</em>, <em>The Area page</em>, <em>The Experience page</em>, <em>Booking page</em>, <em>Gallery</em> and <em>Contact details (footer)</em>. Click one to see everything on it you can change.</p>
+  <ol class="steps">
+    <li><span>Open a page and make your change in the box.</span></li>
+    <li><span>Click <span class="ui">Save</span> (top right).</span></li>
+    <li><span>Wait about a minute, then refresh the website to see it live.</span></li>
+  </ol>
+  <div class="tip"><p><strong>Always press Save.</strong> Nothing changes on the website until you do, and this includes dragging photos into a new order.</p></div>
+  <p>Sections are folded up to keep things tidy. Click a section's name to open it, and click again to fold it away.</p>
+  <div class="tip"><p><strong>Nothing is ever lost.</strong> Every version you save is kept. If something goes wrong, Hillary can bring back any earlier version of the website.</p></div>
+</section>
+
+<section id="words">
+  <p class="eyebrow">Text</p>
+  <h2>Changing the words</h2>
+  <p>Click into any box and type. Most pages have a <em>Small heading</em> (the little capital letters above a title), a <em>Heading</em> and some <em>Text</em>.</p>
+  <h3>Simple formatting</h3>
+  <p>You can style words with a few marks. Type them exactly as shown:</p>
+  <div class="table-scroll"><table>
+    <thead><tr><th>You type</th><th>Visitors see</th></tr></thead>
+    <tbody>
+      <tr><td><span class="mark">*podere*</span></td><td><em>podere</em> (italic)</td></tr>
+      <tr><td><span class="mark">**ten guests**</span></td><td><strong>ten guests</strong> (bold)</td></tr>
+      <tr><td><span class="mark">[see the gallery](gallery.html)</span></td><td>a link reading “see the gallery”</td></tr>
+      <tr><td><span class="mark">[[price to come]]</span></td><td>a highlighted note, for anything still to fill in</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Lists</h3>
+  <p>Some boxes are lists, such as amenities or house rules. Use <span class="ui">Add an item</span> to add a line, drag the dotted handle beside an item to move it, and use the bin icon to delete it. Then <span class="ui">Save</span>.</p>
+  <h3>Google description</h3>
+  <p>Each page has a <em>Google description</em>. It's the short summary people see under the page's name in Google, and it isn't shown on the page itself. Keep it to one or two sentences.</p>
+  <div class="tip"><p><strong>Empty boxes:</strong> if you clear a box completely and save, that line disappears from the website. That's useful for removing a placeholder note.</p></div>
+</section>
+
+<section id="photos">
+  <p class="eyebrow">Images</p>
+  <h2>Changing photos</h2>
+  <ol class="steps">
+    <li><span>Find the photo box you want to change. To clear the current photo, click its bin icon.</span></li>
+    <li><span>Click <span class="ui">Select</span> to pick a photo that's already uploaded, or <span class="ui">Upload</span> to add a new one from your computer or phone.</span></li>
+    <li><span>Click <span class="ui">Save</span>.</span></li>
+  </ol>
+  <p>Upload the largest, original version you have. The website automatically shrinks big photos so pages stay fast, and it removes any hidden location data from them.</p>
+  <h3>Photo descriptions</h3>
+  <p>Many photos have a <em>Photo description</em> box. Write a short sentence about what's in the picture, for example “Long table under the pergola, laid for dinner”. It helps blind visitors using screen readers, and it helps Google.</p>
+  <div class="tip"><p><strong>Photo focus (advanced):</strong> a few homepage photos have this box. It controls how the photo is cropped. If you change one of those photos, empty this box too.</p></div>
+</section>
+
+<section id="gallery">
+  <p class="eyebrow">The Gallery</p>
+  <h2>Adding, removing and reordering photos</h2>
+  <p>Open <strong>Gallery</strong>, then <strong>Sections</strong>. You'll see The main house, Bedrooms, The pool house, Pool, Outside dining and Outside. Bedrooms has a sub-section for each bedroom.</p>
+  <h3>Add a photo</h3>
+  <ol class="steps">
+    <li><span>Open the section and click <span class="ui">Add an item</span> under Photos.</span></li>
+    <li><span>Choose or upload the photo, and type a <em>Caption</em>. The caption shows when someone opens the photo full size.</span></li>
+    <li><span>Click <span class="ui">Save</span>.</span></li>
+  </ol>
+  <h3>Remove a photo</h3>
+  <p>Click the bin icon beside the photo (it says <em>Remove item</em> when you hover over it), confirm with <span class="ui">Remove</span>, then <span class="ui">Save</span>. The photo stays in your uploads, so you can add it back later.</p>
+  <h3>Change the order</h3>
+  <p>Drag photos up or down the list using the dotted handle beside each one, then <span class="ui">Save</span>. The list order is the order visitors click through when they open a photo full size.</p>
+  <h3>Move a photo to another section</h3>
+  <p>Dragging only works within one section. To move a photo to a different section:</p>
+  <ol class="steps">
+    <li><span>Open the section it should be in, click <span class="ui">Add an item</span>, then <span class="ui">Select</span>, and pick the photo from your uploads. Copy its caption across too.</span></li>
+    <li><span>Open the section it was in by mistake, click the photo's bin icon and confirm with <span class="ui">Remove</span>.</span></li>
+    <li><span>Click <span class="ui">Save</span>.</span></li>
+  </ol>
+  <p>Removing a photo from a section never deletes the photo itself, so nothing is lost by moving things around.</p>
+  <h3>Columns</h3>
+  <p>On a computer, the gallery shows photos in three columns. Each photo has a <em>Column</em> setting:</p>
+  <ul>
+    <li><strong>Left, Centre or Right</strong> keeps the photo in that column. Photos in the same column run top to bottom in list order.</li>
+    <li><strong>Blank</strong> lets the website place the photo in whichever column is shortest, so everything stays neat. This is the easiest choice.</li>
+  </ul>
+  <p>On phones, all photos simply stack in list order.</p>
+  <h3>A new section</h3>
+  <p>Use <span class="ui">Add an item</span> under Sections, give it a <em>Title</em>, add photos and save. If a section has no photos yet, the website shows “Photographs to come”.</p>
+</section>
+
+<section id="weeks">
+  <p class="eyebrow">Booking page</p>
+  <h2>Weeks and prices</h2>
+  <p>Open <strong>Booking page</strong>, then <strong>Weeks</strong>. Each Saturday-to-Saturday week has a <em>Status</em>:</p>
+  <ul>
+    <li><strong>Available</strong>: shown normally, and guests can pick it on the enquiry form.</li>
+    <li><strong>Booked</strong>: greyed out on the page, and removed from the enquiry form.</li>
+  </ul>
+  <p>When a week is taken, change it to <strong>Booked</strong> and <span class="ui">Save</span>. To add a new week, use <span class="ui">Add an item</span> and fill in <em>From</em> and <em>To</em>.</p>
+  <p>Under <strong>Availability</strong>, the <em>Prices from</em> box sets the starting price, for example “€15,000 per week”. Leave it empty to show “to add”.</p>
+  <p>The <strong>Booking terms</strong> and <strong>House rules</strong> are here too. The terms are split into <em>Sections</em> (Payment, Security deposit, Tourist tax, Cancellation, Children), each with a title and bullet points. You can edit them, add a section or reorder them.</p>
+  <div class="tip"><p><strong>Figures to confirm</strong> are written in double brackets, like <span class="mark">[[€2,500]]</span>, and show highlighted in yellow on the website. Replace each one with the final figure, without the brackets, and the highlight disappears. Make sure the terms match your rental contract exactly.</p></div>
+</section>
+
+<section id="map">
+  <p class="eyebrow">Quick reference</p>
+  <h2>Where things live</h2>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Page in Pages CMS</th><th>What you'll find</th></tr></thead>
+    <tbody>
+      <tr><td>Home page</td><td>The slideshow photos, welcome text and key facts, the rooms on the homepage, the outdoors photos and features, and Our Story with its quote.</td></tr>
+      <tr><td>The House page</td><td>The amenities lists, and the rooms listed beside each floor plan.</td></tr>
+      <tr><td>The Area page</td><td>Travel times to nearby places, and the lists of wine estates, towns, springs and restaurants.</td></tr>
+      <tr><td>The Experience page</td><td>The wine section with its photos, the list of services guests can book, and the Torneo (August festival) section with its photos and tickets note. Clear the Torneo heading to hide that section.</td></tr>
+      <tr><td>Booking page</td><td>Weeks, prices, booking terms and house rules.</td></tr>
+      <tr><td>Gallery</td><td>Every gallery section and photo.</td></tr>
+      <tr><td>Contact details (footer)</td><td>The location line, email, Instagram handle and CIN number at the bottom of every page.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Most pages also have a <em>Top banner</em> (the large photo and title at the top) and a <em>Bottom banner</em> (the closing invitation to enquire).</p>
+</section>
+
+<section id="accounts">
+  <p class="eyebrow">Your accounts</p>
+  <h2>Who owns what</h2>
+  <p>The website belongs to you. It's made up of four accounts, all in your name, and each does one job:</p>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Account</th><th>What it does</th><th>What you do there</th></tr></thead>
+    <tbody>
+      <tr><td>Pages CMS</td><td>Where you edit words, photos and weeks.</td><td>Everyday editing, using this guide.</td></tr>
+      <tr><td>GitHub</td><td>Stores the website's files, with every saved version.</td><td>Nothing day to day, but you use your GitHub login to sign in to Pages CMS. Pages CMS saves your changes here for you.</td></tr>
+      <tr><td>Vercel</td><td>Puts the website online, and republishes it about a minute after each change.</td><td>Nothing day to day, apart from the monthly bill.</td></tr>
+      <tr><td>GoDaddy</td><td>Holds your web address, casarossa.estate, and the settings for your casarossa.estate email.</td><td>Renew the address each year.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="tip"><p><strong>Please don't change any DNS settings in GoDaddy</strong> without checking with Hillary first. Your email and your website both depend on them, and one wrong change can stop your email arriving.</p></div>
+  <h3>Hillary's access</h3>
+  <p>You never need to share a password. Hillary has her own access to GitHub and Pages CMS, so she can make bigger changes for you, and you can remove her access at any time.</p>
+</section>
+
+<section id="help">
+  <p class="eyebrow">Bigger changes</p>
+  <h2>When to ask Hillary</h2>
+  <p>Pages CMS covers words, photos, lists and weeks. Ask Hillary for anything that changes how the website is built:</p>
+  <ul>
+    <li>Floor plans (they're drawings, so they can't be edited in Pages CMS)</li>
+    <li>New pages, or a different layout or design</li>
+    <li>Connecting or changing your web address (casarossa.estate)</li>
+    <li>Where enquiry and registration forms send their emails</li>
+    <li>Getting back an earlier version of the website</li>
+  </ul>
+  <h3>If something looks wrong</h3>
+  <ul>
+    <li><strong>A change isn't showing:</strong> check you pressed Save, wait two minutes, then refresh the page. On a phone, close and reopen the page.</li>
+    <li><strong>A photo looks blurry:</strong> upload a larger original.</li>
+    <li><strong>The page layout looks broken:</strong> undo your last change and save. If that doesn't fix it, ask Hillary, who can restore the previous version.</li>
+  </ul>
+  <div class="ask"><p>Hillary has editing access to the same website, so she can step in on anything here at any time.</p></div>
+</section>
+
+<footer><p>Casa Rossa, Castelgiocondo, Montalcino · Website guide, November 2026</p></footer>
+</div>
