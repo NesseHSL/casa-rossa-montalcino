@@ -12,10 +12,47 @@
     "heading": "Amenities",
     "text": "A private *podere* set in the 815-hectare estate of Castelgiocondo, of which 235 hectares are vineyards.",
     "groups": [
-      { "title": "In the house", "items": ["Air conditioning in all bedrooms", "Underfloor cooling on the ground floor", "Indoor fireplace", "TV", "Wireless internet", "Table football", "Non-smoking house"] },
-      { "title": "Outside", "items": ["Pool", "Garden", "Private olive orchard", "Outdoor fire pits", "Outdoor barbecues", "Bocce court", "Table tennis", "Parking area"] },
-      { "title": "Kitchen and laundry", "items": ["Fully equipped kitchen", "Ice machine", "Two washing machines and a dryer"] },
-      { "title": "Housekeeping", "items": ["Midweek sheet and towel change and light clean", "Welcome basket", "Essentials"] }
+      {
+        "title": "In the house",
+        "items": [
+          "Air conditioning in all bedrooms",
+          "Underfloor cooling on the ground floor",
+          "Indoor fireplace",
+          "TV",
+          "Wireless internet",
+          "Table football",
+          "Non-smoking house"
+        ]
+      },
+      {
+        "title": "Outside",
+        "items": [
+          "Pool",
+          "Garden",
+          "Private olive orchard",
+          "Outdoor fire pits",
+          "Outdoor barbecues",
+          "Bocce court",
+          "Table tennis",
+          "Parking area"
+        ]
+      },
+      {
+        "title": "Kitchen and laundry",
+        "items": [
+          "Fully equipped kitchen",
+          "Ice machine",
+          "Two washing machines and a dryer"
+        ]
+      },
+      {
+        "title": "Housekeeping",
+        "items": [
+          "Midweek sheet and towel change and light clean",
+          "Welcome basket",
+          "Essentials"
+        ]
+      }
     ]
   },
   "floorplans": {
@@ -23,11 +60,59 @@
     "heading": "How the house fits together",
     "text": "Five en-suite bedrooms across two floors, generous living spaces, and a separate pool house across the courtyard.",
     "floors": [
-      { "title": "Ground floor", "items": ["Winter sitting room", "Formal dining room", "La Saletta", "Lounge", "Kitchen and dining", "TV and games room", "Bedroom five with en-suite", "Guest cloakroom"], "plan": "/images/floorplan-ground.png" },
-      { "title": "First floor", "items": ["Principal bedroom with en-suite", "Bedroom two with en-suite", "Bedroom three with en-suite and door to the loggia", "Bedroom four with en-suite", "Gallery staircase"], "plan": "/images/floorplan-first.png" },
-      { "title": "Pool house", "items": ["Kitchen", "Sitting area", "Dining area", "Bathroom", "Wood-fired bread and pizza oven"], "plan": "/images/floorplan-pool-house.png" },
-      { "title": "Outside", "items": ["Pergola with a table for twenty", "Saltwater pool, 15 by 4.5 metres", "Summer bed and hammocks", "Bocce court", "Table tennis", "Dining in the olive grove"], "plan": "" }
+      {
+        "title": "Ground floor",
+        "items": [
+          "Winter sitting room",
+          "Formal dining room",
+          "La Saletta",
+          "Lounge",
+          "Kitchen and dining",
+          "TV and games room",
+          "Bedroom five with en-suite",
+          "Guest cloakroom"
+        ],
+        "plan": "/images/floorplan-ground.png"
+      },
+      {
+        "title": "First floor",
+        "items": [
+          "Principal bedroom with en-suite",
+          "Bedroom two with en-suite",
+          "Bedroom three with en-suite and door to the loggia",
+          "Bedroom four with en-suite",
+          "Gallery staircase"
+        ],
+        "plan": "/images/floorplan-first.png"
+      },
+      {
+        "title": "Pool house",
+        "items": [
+          "Kitchen",
+          "Sitting area",
+          "Dining area",
+          "Bathroom",
+          "Wood-fired bread and pizza oven"
+        ],
+        "plan": "/images/floorplan-pool-house.png"
+      },
+      {
+        "title": "Outside",
+        "items": [
+          "Pergola with a table for twenty",
+          "Saltwater pool, 15 by 4.5 metres",
+          "Summer bed and hammocks",
+          "Bocce court",
+          "Table tennis",
+          "Dining in the olive grove"
+        ],
+        "plan": "/images/outside-02.jpg"
+      }
     ]
   },
-  "cta": { "eyebrow": "Summer 2027", "heading": "Come and stay", "button": "Availability and booking" }
+  "cta": {
+    "eyebrow": "Summer 2027",
+    "heading": "Come and stay",
+    "button": "Availability and booking"
+  }
 }
