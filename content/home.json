@@ -7,8 +7,7 @@
     "text": "A two-hundred-year-old farmhouse at the top of the hill, among the Brunello vineyards of Luce and the historic Castelgiocondo estate.",
     "slides": [
       "/images/vineyard-cypress.jpg",
-      "/images/pool3.jpg",
-      "/images/kitchen.jpg",
+      "/images/pool-03.jpg",
       "/images/living-area2.jpg",
       "/images/outside-wildflowers.jpg",
       "/images/dining-2.jpg"
@@ -21,10 +20,22 @@
     "text": "Restored with patience over a decade, the house has been brought to life with style and comfort in every detail: crystal chandeliers and deep sofas, old chestnut beams and a professional kitchen, quiet corners for reading and a saltwater pool for long afternoons. It is a home first, full of character, art and books, and made for sharing.",
     "text_muted": "The house is surrounded by a hectare and a half of olive groves, fruit trees and a garden of native plants, where swallows nest under the eaves and owls call at night. The castle is a fifteen-minute walk along the white roads, and Montalcino is a fifteen-minute drive.",
     "facts": [
-      { "number": "5", "label": "En-suite bedrooms" },
-      { "number": "10", "label": "Guests" },
-      { "number": "15m", "label": "Saltwater pool" },
-      { "number": "1.5", "label": "Hectares of grounds" }
+      {
+        "number": "5",
+        "label": "En-suite bedrooms"
+      },
+      {
+        "number": "10",
+        "label": "Guests"
+      },
+      {
+        "number": "15m",
+        "label": "Saltwater pool"
+      },
+      {
+        "number": "1.5",
+        "label": "Hectares of grounds"
+      }
     ]
   },
   "house": {
@@ -33,12 +44,44 @@
     "text": "A main house of generous living spaces and five bedrooms, each with its own bathroom, plus a separate pool house across the courtyard.",
     "link_text": "View full gallery and bedrooms",
     "rooms": [
-      { "image": "/images/kitchen.jpg", "alt": "Open kitchen with steel island under beamed ceilings", "title": "The kitchen", "text": "A professional steel kitchen under brick arches and old chestnut beams, open to the main dining and living area.", "focus": "33% 50%" },
-      { "image": "/images/dining-formal-sm.jpg", "alt": "Formal dining room laid for dinner, with crystal chandelier, mirrored wall and long wooden table", "title": "Formal dining room", "text": "A long table beneath a crystal chandelier, for the dinners that go on well past midnight.", "focus": "" },
-      { "image": "/images/winter-sitting-sm.jpg", "alt": "Winter sitting room with a buttoned sofa beneath a gilt mirror on the stone wall", "title": "Winter sitting room", "text": "Exposed stone, a great carved fireplace and doors that open straight onto the garden.", "focus": "50% 30%" },
-      { "image": "/images/living-area.jpg", "alt": "Lounge with deep sofa, books and floor lamp", "title": "The lounge", "text": "Deep sofas, stacks of books and a fire for cooler evenings.", "focus": "" },
-      { "image": "/images/lounge-games.jpg", "alt": "TV room with blue sofa and table football", "title": "TV and games room", "text": "Big blue sofa, television and *calcio balilla* table football.", "focus": "" },
-      { "image": "/images/stairwell.jpg", "alt": "Gallery staircase with chandelier and iron balustrade", "title": "The gallery staircase", "text": "A chandelier-lit staircase leading up to four of the five bedrooms.", "focus": "" }
+      {
+        "image": "/images/kitchen.jpg",
+        "alt": "Open kitchen with steel island under beamed ceilings",
+        "title": "The kitchen",
+        "text": "A professional steel kitchen under brick arches and old chestnut beams, open to the main dining and living area.",
+        "focus": "33% 50%"
+      },
+      {
+        "image": "/images/dining-formal-sm.jpg",
+        "alt": "Formal dining room laid for dinner, with crystal chandelier, mirrored wall and long wooden table",
+        "title": "Formal dining room",
+        "text": "A long table beneath a crystal chandelier, for the dinners that go on well past midnight."
+      },
+      {
+        "image": "/images/winter-sitting-sm.jpg",
+        "alt": "Winter sitting room with a buttoned sofa beneath a gilt mirror on the stone wall",
+        "title": "Winter sitting room",
+        "text": "Exposed stone, a great carved fireplace and doors that open straight onto the garden.",
+        "focus": "50% 30%"
+      },
+      {
+        "image": "/images/living-area.jpg",
+        "alt": "Lounge with deep sofa, books and floor lamp",
+        "title": "The lounge",
+        "text": "Deep sofas, stacks of books and a fire for cooler evenings."
+      },
+      {
+        "image": "/images/lounge-games.jpg",
+        "alt": "TV room with blue sofa and table football",
+        "title": "TV and games room",
+        "text": "Big blue sofa, television and *calcio balilla* table football."
+      },
+      {
+        "image": "/images/stairwell.jpg",
+        "alt": "Gallery staircase with chandelier and iron balustrade",
+        "title": "The gallery staircase",
+        "text": "A chandelier-lit staircase leading up to four of the five bedrooms."
+      }
     ],
     "button_text": "View the floor plans"
   },
@@ -47,24 +90,60 @@
     "heading": "Life here happens outside",
     "text": "Breakfast on the terrace, lunch under the pergola, a siesta in the hammock and dinner among the olive trees.",
     "link_text": "View the full gallery",
-    "photo_large": { "image": "/images/pool3.jpg", "alt": "Saltwater pool framed by cypress trees" },
-    "photo_small_1": { "image": "/images/pool2.jpg", "alt": "Pool edge with Adirondack chairs facing the hills" },
-    "photo_small_2": { "image": "/images/pizza-oven.jpg", "alt": "Old stone bread and pizza oven" },
-    "photo_wide": { "image": "/images/outside-wildflowers.jpg", "alt": "Wildflower garden with lavender beside the house" },
+    "photo_large": {
+      "image": "/images/pool3.jpg",
+      "alt": "Saltwater pool framed by cypress trees"
+    },
+    "photo_small_1": {
+      "image": "/images/outside-16.jpg",
+      "alt": "small pergola with sun bed, fire pit and  Adirondack chairs facing the hills"
+    },
+    "photo_small_2": {
+      "image": "/images/outside-21.jpg",
+      "alt": "bocce court"
+    },
+    "photo_wide": {
+      "image": "/images/outdoor-dining-07.jpg",
+      "alt": "table laid for lunch under the pergola filled with vines"
+    },
     "features": [
-      { "title": "The pergola", "text": "A shaded table for twenty, looking over the pool and the valley." },
-      { "title": "Saltwater pool", "text": "Fifteen metres by four and a half, with loungers, a summer bed and views to the hills." },
-      { "title": "The bread oven", "text": "The original wood-fired oven, still perfect for pizza nights." },
-      { "title": "Bocce and table tennis", "text": "A bocce court and table tennis for long afternoons." },
-      { "title": "Dining in the olive grove", "text": "A table set among the trees for lunches and candlelit dinners." },
-      { "title": "Hammocks and hideaways", "text": "Quiet corners all over the garden to read, doze or open a bottle." }
+      {
+        "title": "The pergola",
+        "text": "A shaded table for twenty, looking over the pool and the valley."
+      },
+      {
+        "title": "Saltwater pool",
+        "text": "Fifteen metres by four and a half, with loungers, a summer bed and views to the hills."
+      },
+      {
+        "title": "The bread oven",
+        "text": "The original wood-fired oven, still perfect for pizza nights."
+      },
+      {
+        "title": "Bocce and table tennis",
+        "text": "A bocce court and table tennis for long afternoons."
+      },
+      {
+        "title": "Dining in the olive grove",
+        "text": "A table set among the trees for lunches and candlelit dinners."
+      },
+      {
+        "title": "Hammocks and hideaways",
+        "text": "Quiet corners all over the garden to read, doze or open a bottle."
+      }
     ]
   },
   "story": {
     "eyebrow": "Our Story",
     "heading": "A ruin, a decade, and a great deal of love",
-    "photo": { "image": "/images/outside-entrance.jpg", "alt": "Stone courtyard entrance of Casa Rossa with climbing vines" },
-    "portrait": { "image": "/images/pat-and-mark-2.jpg", "alt": "Pat and Mark" },
+    "photo": {
+      "image": "/images/outside-entrance.jpg",
+      "alt": "Stone courtyard entrance of Casa Rossa with climbing vines"
+    },
+    "portrait": {
+      "image": "/images/pat-and-mark-2.jpg",
+      "alt": "Pat and Mark"
+    },
     "paragraphs": [
       "Casa Rossa is a *podere*, one of the farmhouses where the estate's workers once lived. Two outside staircases tell you two families shared it, with the animals below and the people above. It was a working farm until the 1960s, and the bread oven in the garden is so large it probably baked for every podere on the estate.",
       "We bought it in 1999, when parts of the roof were missing and some rooms were too dangerous to enter. Restoring it took ten years. The outside is almost exactly as it was; inside, original stone and beams sit alongside touches of Rococo, industrial pieces and contemporary design. It has been our family home for nearly twenty years."
