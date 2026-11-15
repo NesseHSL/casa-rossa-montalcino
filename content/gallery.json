@@ -1,13 +1,12 @@
 {
-  "eyebrow": "Gallery",
-  "heading": "Casa Rossa in pictures",
   "meta_title": "Gallery · Casa Rossa, Montalcino",
   "meta_description": "Photographs of Casa Rossa: the views, the garden and pool, the main house, the five en-suite bedrooms and the pool house.",
+  "eyebrow": "Gallery",
+  "heading": "Casa Rossa in pictures",
   "sections": [
     {
       "id": "main-house",
       "title": "The main house",
-      "intro": "",
       "photos": [
         {
           "image": "/images/kitchen.jpg",
@@ -79,14 +78,12 @@
           "caption": "The lounge fireplace",
           "column": "Centre"
         }
-      ],
-      "groups": []
+      ]
     },
     {
       "id": "bedrooms",
       "title": "Bedrooms",
       "intro": "Five bedrooms, each with its own en-suite bathroom.",
-      "photos": [],
       "groups": [
         {
           "title": "Bedroom one",
@@ -256,11 +253,6 @@
               "column": "Left"
             },
             {
-              "image": "/images/bedroom-4-05.jpg",
-              "caption": "Bedroom four en-suite, basin and gilt mirror",
-              "column": "Centre"
-            },
-            {
               "image": "/images/bedroom-4-08.jpg",
               "caption": "View over the garden and hills from bedroom four",
               "column": "Right"
@@ -318,7 +310,6 @@
     {
       "id": "pool-house",
       "title": "The pool house",
-      "intro": "",
       "photos": [
         {
           "image": "/images/pool-house-room.jpg",
@@ -355,8 +346,7 @@
           "caption": "The wood-fired bread oven in the pool house",
           "column": "Centre"
         }
-      ],
-      "groups": []
+      ]
     },
     {
       "id": "pool",
@@ -365,302 +355,241 @@
       "photos": [
         {
           "image": "/images/pool-01.jpg",
-          "caption": "The saltwater pool and its line of cypresses",
-          "column": ""
+          "caption": "The saltwater pool and its line of cypresses"
         },
         {
           "image": "/images/pool-02.jpg",
-          "caption": "Loungers and the pool, looking out over the hills",
-          "column": ""
+          "caption": "Loungers and the pool, looking out over the hills"
         },
         {
           "image": "/images/pool-03.jpg",
-          "caption": "Agapanthus around the pool, with the vineyards beyond",
-          "column": ""
+          "caption": "Agapanthus around the pool, with the vineyards beyond"
         },
         {
           "image": "/images/pool-04.jpg",
-          "caption": "The pool from the shallow end",
-          "column": ""
+          "caption": "The pool from the shallow end"
         },
         {
           "image": "/images/pool-05.jpg",
-          "caption": "A summer afternoon on the pool floats",
-          "column": ""
+          "caption": "A summer afternoon on the pool floats"
         },
         {
           "image": "/images/pool-06.jpg",
-          "caption": "Striped floats at sunset",
-          "column": ""
+          "caption": "Striped floats at sunset"
         },
         {
           "image": "/images/pool-07.jpg",
-          "caption": "Sunset reflected in the pool",
-          "column": ""
+          "caption": "Sunset reflected in the pool"
         },
         {
           "image": "/images/pool-08.jpg",
-          "caption": "The sun setting behind the cypresses",
-          "column": ""
+          "caption": "The sun setting behind the cypresses"
         },
         {
           "image": "/images/pool-09.jpg",
-          "caption": "The pool lit up at night",
-          "column": ""
+          "caption": "The pool lit up at night"
         }
-      ],
-      "groups": []
+      ]
     },
     {
       "id": "outdoor-dining",
       "title": "Outside dining",
-      "intro": "",
       "photos": [
         {
           "image": "/images/outdoor-dining-01.jpg",
-          "caption": "The pergola table at dusk, under strings of lights",
-          "column": ""
+          "caption": "The pergola table at dusk, under strings of lights"
         },
         {
           "image": "/images/outdoor-dining-02.jpg",
-          "caption": "The long table under the pergola, laid for dinner",
-          "column": ""
+          "caption": "The long table under the pergola, laid for dinner"
         },
         {
           "image": "/images/outdoor-dining-03.jpg",
-          "caption": "A chandelier over the table, with the pool and hills beyond",
-          "column": ""
+          "caption": "A chandelier over the table, with the pool and hills beyond"
         },
         {
           "image": "/images/outdoor-dining-04.jpg",
-          "caption": "Golden hour at the pergola table",
-          "column": ""
+          "caption": "Golden hour at the pergola table"
         },
         {
           "image": "/images/outdoor-dining-05.jpg",
-          "caption": "A table set on the lawn at sunset",
-          "column": ""
+          "caption": "A table set on the lawn at sunset"
         },
         {
           "image": "/images/outdoor-dining-06.jpg",
-          "caption": "Dinner for a crowd under the pergola",
-          "column": ""
+          "caption": "Dinner for a crowd under the pergola"
         },
         {
           "image": "/images/outdoor-dining-07.jpg",
-          "caption": "The vine-covered pergola by day",
-          "column": ""
+          "caption": "The vine-covered pergola by day"
         },
         {
           "image": "/images/outdoor-dining-08.jpg",
-          "caption": "A small table for two beside the house",
-          "column": ""
+          "caption": "A small table for two beside the house"
         },
         {
           "image": "/images/outdoor-dining-09.jpg",
-          "caption": "Drinks around the fire pit",
-          "column": ""
+          "caption": "Drinks around the fire pit"
         },
         {
           "image": "/images/outdoor-dining-10.jpg",
-          "caption": "Lunch in the shade on the lawn",
-          "column": ""
+          "caption": "Lunch in the shade on the lawn"
         },
         {
           "image": "/images/outdoor-dining-11.jpg",
-          "caption": "Lunch under the tree beside the house",
-          "column": ""
+          "caption": "Lunch under the tree beside the house"
         },
         {
           "image": "/images/outdoor-dining-12.jpg",
-          "caption": "A table beneath the tree",
-          "column": ""
+          "caption": "A table beneath the tree"
         },
         {
           "image": "/images/outdoor-dining-13.jpg",
-          "caption": "A picnic bench in the shade, looking out over the valley",
-          "column": ""
+          "caption": "A picnic bench in the shade, looking out over the valley"
         }
-      ],
-      "groups": []
+      ]
     },
     {
       "id": "garden",
       "title": "Outside",
-      "intro": "",
       "photos": [
         {
           "image": "/images/outside-01.jpg",
-          "caption": "The front of Casa Rossa",
-          "column": ""
+          "caption": "The front of Casa Rossa"
         },
         {
           "image": "/images/outside-02.jpg",
-          "caption": "Casa Rossa from above, among the vineyards and olive trees",
-          "column": ""
+          "caption": "Casa Rossa from above, among the vineyards and olive trees"
         },
         {
           "image": "/images/outside-03.jpg",
-          "caption": "The house among the trees",
-          "column": ""
+          "caption": "The house among the trees"
         },
         {
           "image": "/images/outside-04.jpg",
-          "caption": "The lawn and the house",
-          "column": ""
+          "caption": "The lawn and the house"
         },
         {
           "image": "/images/outside-05.jpg",
-          "caption": "The garden below the house",
-          "column": ""
+          "caption": "The garden below the house"
         },
         {
           "image": "/images/outside-06.jpg",
-          "caption": "The house and its outbuildings",
-          "column": ""
+          "caption": "The house and its outbuildings"
         },
         {
           "image": "/images/outside-07.jpg",
-          "caption": "The gravel drive up to the house",
-          "column": ""
+          "caption": "The gravel drive up to the house"
         },
         {
           "image": "/images/outside-08.jpg",
-          "caption": "Clipped hedges and grasses in front of the house",
-          "column": ""
+          "caption": "Clipped hedges and grasses in front of the house"
         },
         {
           "image": "/images/outside-09.jpg",
-          "caption": "Clipped hedges along the house",
-          "column": ""
+          "caption": "Clipped hedges along the house"
         },
         {
           "image": "/images/outside-10.jpg",
-          "caption": "Flowers in the garden beds",
-          "column": ""
+          "caption": "Flowers in the garden beds"
         },
         {
           "image": "/images/outside-11.jpg",
-          "caption": "The gravel garden and pergola",
-          "column": ""
+          "caption": "The gravel garden and pergola"
         },
         {
           "image": "/images/outside-12.jpg",
-          "caption": "A gravel path through the planting",
-          "column": ""
+          "caption": "A gravel path through the planting"
         },
         {
           "image": "/images/outside-13.jpg",
-          "caption": "A garden path leading down towards the valley",
-          "column": ""
+          "caption": "A garden path leading down towards the valley"
         },
         {
           "image": "/images/outside-14.jpg",
-          "caption": "A quiet corner with a table and chairs",
-          "column": ""
+          "caption": "A quiet corner with a table and chairs"
         },
         {
           "image": "/images/outside-15.jpg",
-          "caption": "A shaded table on the terrace",
-          "column": ""
+          "caption": "A shaded table on the terrace"
         },
         {
           "image": "/images/outside-16.jpg",
-          "caption": "An outdoor sitting area under the trees",
-          "column": ""
+          "caption": "An outdoor sitting area under the trees"
         },
         {
           "image": "/images/outside-17.jpg",
-          "caption": "Outdoor seating with striped cushions",
-          "column": ""
+          "caption": "Outdoor seating with striped cushions"
         },
         {
           "image": "/images/outside-18.jpg",
-          "caption": "A hammock in the shade",
-          "column": ""
+          "caption": "A hammock in the shade"
         },
         {
           "image": "/images/outside-19.jpg",
-          "caption": "Garden chairs looking out over the hills",
-          "column": ""
+          "caption": "Garden chairs looking out over the hills"
         },
         {
           "image": "/images/outside-20.jpg",
-          "caption": "The bocce court",
-          "column": ""
+          "caption": "The bocce court"
         },
         {
           "image": "/images/outside-21.jpg",
-          "caption": "A game of bocce",
-          "column": ""
+          "caption": "A game of bocce"
         },
         {
           "image": "/images/outside-22.jpg",
-          "caption": "Vineyards on the Castelgiocondo estate",
-          "column": ""
+          "caption": "Vineyards on the Castelgiocondo estate"
         },
         {
           "image": "/images/outside-23.jpg",
-          "caption": "A track through the vineyards",
-          "column": ""
+          "caption": "A track through the vineyards"
         },
         {
           "image": "/images/outside-24.jpg",
-          "caption": "Among the vines",
-          "column": ""
+          "caption": "Among the vines"
         },
         {
           "image": "/images/outside-25.jpg",
-          "caption": "The view across the valley to the hills",
-          "column": ""
+          "caption": "The view across the valley to the hills"
         },
         {
           "image": "/images/outside-26.jpg",
-          "caption": "The valley in late summer",
-          "column": ""
+          "caption": "The valley in late summer"
         },
         {
           "image": "/images/outside-27.jpg",
-          "caption": "The view through an old stone window",
-          "column": ""
+          "caption": "The view through an old stone window"
         },
         {
           "image": "/images/outside-28.jpg",
-          "caption": "Grasses glowing at sunset",
-          "column": ""
+          "caption": "Grasses glowing at sunset"
         },
         {
           "image": "/images/outside-29.jpg",
-          "caption": "Sunset over the hills",
-          "column": ""
+          "caption": "Sunset over the hills"
         },
         {
           "image": "/images/vineyard-cypress.jpg",
-          "caption": "Cypress trees and vineyards below Casa Rossa",
-          "column": ""
+          "caption": "Cypress trees and vineyards below Casa Rossa"
         },
         {
           "image": "/images/outside-entrance.jpg",
-          "caption": "Courtyard entrance",
-          "column": ""
+          "caption": "Courtyard entrance"
         },
         {
           "image": "/images/olive-groves.jpg",
-          "caption": "Olive groves",
-          "column": ""
+          "caption": "Olive groves"
         },
         {
           "image": "/images/pizza-oven.jpg",
-          "caption": "The old bread oven",
-          "column": ""
+          "caption": "The old bread oven"
         },
         {
           "image": "/images/outside-wildflowers.jpg",
-          "caption": "Wildflower garden",
-          "column": ""
+          "caption": "Wildflower garden"
         }
-      ],
-      "groups": []
+      ]
     }
   ]
 }
