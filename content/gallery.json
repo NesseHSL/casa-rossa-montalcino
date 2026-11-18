@@ -24,10 +24,6 @@
           "column": "Right"
         },
         {
-          "caption": "Kitchen and dining",
-          "column": "Left"
-        },
-        {
           "image": "/images/living-area2.jpg",
           "caption": "Winter sitting room",
           "column": "Centre"
@@ -373,15 +369,6 @@
           "image": "/images/8b01cfa9-4ff4-4337-b764-885befd50aa1-1.jpg",
           "caption": "The sofa, a place to relax in the day or read a good book",
           "column": "Centre"
-        },
-        {
-          "caption": "gallery dining room at night with 3 chandeliers"
-        },
-        {
-          "caption": "gallery dining room at night"
-        },
-        {
-          "caption": "gallery dining room laid for dinner"
         }
       ]
     },
