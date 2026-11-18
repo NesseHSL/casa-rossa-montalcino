@@ -15,7 +15,7 @@
         },
         {
           "image": "/images/dining.jpg",
-          "caption": "Dining room",
+          "caption": "Gallery Dining room",
           "column": "Centre"
         },
         {
@@ -70,13 +70,25 @@
         },
         {
           "image": "/images/dining-2.jpg",
-          "caption": "Formal dining room",
+          "caption": "Dining room",
           "column": "Left"
         },
         {
           "image": "/images/lounge-fireplace.jpg",
           "caption": "The lounge fireplace",
           "column": "Centre"
+        },
+        {
+          "image": "/images/ee4f8d8a-7b15-45eb-a1b7-809a0db4b9c8.jpg",
+          "caption": "the kitchen island facing the dining room"
+        },
+        {
+          "image": "/images/f6ef1c50-5e85-496a-8dfe-6522f3e3718b.jpg",
+          "caption": "the comfy velvet sofa in the lounge"
+        },
+        {
+          "image": "/images/d7ea2641-c90e-4fcc-b65f-c287fc070217.jpg",
+          "caption": "side view of velvet sofa in the lounge"
         }
       ]
     },
@@ -345,6 +357,23 @@
           "image": "/images/pool-house-bread-oven.jpg",
           "caption": "The wood-fired bread oven in the pool house",
           "column": "Centre"
+        },
+        {
+          "image": "/images/8b01cfa9-4ff4-4337-b764-885befd50aa1-1.jpg",
+          "caption": "The sofa, a place to relax in the day or read a good book",
+          "column": "Centre"
+        },
+        {
+          "image": "/images/06c0231c-cf04-4f46-b26c-b1e1b3cc787d-1.jpg",
+          "caption": "gallery dining room at night with 3 chandeliers"
+        },
+        {
+          "image": "/images/9e378d47-8690-4870-9a30-d147f01215bc.jpg",
+          "caption": "gallery dining room at night"
+        },
+        {
+          "image": "/images/e84dc075-8e28-4df1-ac0b-453ba966c1a2.jpg",
+          "caption": "gallery dining room laid for dinner"
         }
       ]
     },
